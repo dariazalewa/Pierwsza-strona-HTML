@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>D.Z.</title>
+      <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    <body>
+        <center><h2> HTML i CSS - Formularze</h2></center>
+        <br>
+        <nav><B>Rozdziały: </B>
+            <li><a href="glowna.html"> Powrót do strony głównej</a></li>
+        </nav>
+        <br>
+        <p>Każdy formularz zaczyna się od znacznika otwierającego &lt;form&gt; i zamykającego &lt;/form&gt;. Podstawowe elementy formularza to pole tekstowe i listy oraz przycisk powodujący wysłanie danych. 
+            Przykładowy wygląd kodu to np.: <br>
+            &lt;form action="mailto:dom@gm.com" method="post"&gt; <br>
+            &lt;!-- treść formularza --&gt; <br>
+            &lt;/form&gt; <br>
+        </p>
+        <p> Najważniejszym elementem formularza jest pole INPUT. W nim edytyjemy wszystko(lub prawie wszystko) co zawierać będzie nasz formularz. <br>
+            Przykładowy formularz to np.: <br> 
+            &lt;form action="mailto" method="post"&gt; <br>
+            &lt;p&gt;Podaj swój adres email:&lt;/p&gt; <br>
+            &lt;input type="text" name="adres" value=""&gt; <br>
+            &lt;input type="submit" value="Wyślij"&gt; <br>
+            &lt;/form&gt; <br>
+            Rezultat to: <br>
+        </p>
+        <form action="mailto" method="post">
+            <p>Podaj swój adres email:</p>
+            <input type="text" name="adres" value="">
+            <input type="submit" value="Wyślij">
+        </form> <br>
+        <p> Jak widać tutaj wpisujemy w formularzu swój adres email. </p>
+        <br>
+        <p>Znacznik &lt;input&gt; ma następujące atrybuty: <br></p>
+        <table>
+            <tr><th>name</th><th> Określa nazwę danego pola oraz nazwę zmiennej, <br> do której zostanie podstawiona wprowadzona wartość. <br> Każde pole powinno posiadać ten atrybut, <br> ale jego wartość powinna być różna dla wszstkich pól formularza.</th></tr>
+            <tr><th>value</th><th> Określa nazwę danego pola oraz nazwę zmiennej, <br> do której zostanie podstawiona wprowadzona wartość. <br> Każde pole powinno posiadać ten atrybut, <br> ale jego wartość powinna być różna dla wszstkich pól formularza.</th></tr>
+        </table>  
+</body>
+</html>
