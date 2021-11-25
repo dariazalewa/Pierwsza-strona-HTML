@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>D.Z.</title>
+      <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    <body>
+        <center><h2> HTML i CSS - Listy.</h2></center>
+        <br>
+        <nav><B>Rozdziały: </B>
+            <li><a href="glowna.html"> Powrót do strony głównej </a></li>
+          </nav>
+          <br>
+        <p> Listy nieuporządkowane(wypunktowane) oznaczamy: <br> &lt;ul&gt; <br> : <br> &lt;/ul&gt; <br> W znaczniku &lt;ul&gt; wpisujemy atrybut TYPE określający kształt wypunktowania, np.: 
+            <br> &lt;body&gt; <br> &lt;ul TYPE="square"&gt; <br> &lt;li&gt;pierwsza&lt;/li&gt; <br> &lt;/ul&gt; </p>
+            <p> Mamy 3 typy:</p>
+            <p>Zamalowane kółko:</p>
+            <ul TYPE="disc"> <li>1</li></ul>
+                <p>Niezamalowane kółko:</p>
+            <ul TYPE="round"> <li>2</li></ul>   
+            <p>Kwadrat:</p>
+            <ul TYPE="square"> <li>3</li></ul> 
+            <br>
+        <p>Listy uporządkowane(numerowane) oznaczamy:<br> &lt;ol&gt; <br> : <br> &lt;/ol&gt; <br> <br>Tutaj jednak atrybut TYPE określamy jako:</p>
+        <table>
+            <tr><th>TYPE</th><th>Opis</th></tr>
+            <tr><th>TYPE="1"</th><th>Ponumerowane liczbami(domyślne).</th></tr>
+            <tr><th>TYPE="A"</th><th>Ponumerowane wielkimi literami.</th></tr>
+            <tr><th>TYPE="a"</th><th>Ponumerowane małymi literami.</th></tr>
+            <tr><th>TYPE="I"</th><th>Ponumerowane wielkimi cyframi rzymskimi.</th></tr>
+            <tr><th>TYPE="i"</th><th>Ponumerowane małymi cyframi rzymskimi.</th></tr>
+        </table>  
+        <br>
+        <p>Jeśli chcemy rozpocząć wyliczanie od określonej wartości np. od 2 linii a nie od 1 to wpisujemu w znaczniku &lt;ol&gt; atrybut START="liczba":<br>
+            &lt;ol START="2"&gt; <br> &lt;li&gt; <br> ... <br> &lt;/li&gt; <br> &lt;/ol&gt; </p>
+        <p>Możemy też te dwie możliwości połączyć np. ponumerować małymi rzymskimi liczbami i zacząć wyliczać od 3: <br> kod: <br> &lt;ol TYPE="i" START="3"&gt; <br> &lt;li&gt;1 &lt;/li&gt; <br>
+            &lt;li&gt;2 &lt;/li&gt; <br> &lt;li&gt;3 &lt;/li&gt; <br> &lt;/ol&gt; <br> rezultat: <br></p>
+            <ol TYPE="i" START="3">
+                <li>1 </li>
+                <li>2 </li>
+                <li>3 </li>
+                </ol>
+        <p>Ostatnią ważną rzeczą są listy definicji, które służą do tworzenia słowników, wyjaśnień i opisów różnych terminów. <br> Kod składa się w następujący sposób: <br>
+            &lt;DL&gt; <br> &lt;DT&gt;Język HTML &lt;/DT&gt; <br>
+            &lt;DD&gt;...&lt;/DD&gt; <br> &lt;/DL&gt;<br> 
+        <b>Znaczniki &lt;DL&gt;...&lt;/DL&gt; zawierają część definiującą. <br> Znaczniki &lt;DT&gt;...&lt;/DT&gt; część definiowaną. <br> A znaczniki &lt;DD&gt;...&lt;/DD&gt; określają część definiowanej.</b> <br>
+    Przykład takiej definicji: </p>
+        <DL>
+        <DT>Język HTML </DT>
+        <DD> Jest to kod używany do tworzenia struktury strony i jej zawartości. <br>Na przykład treść może być uporządkowana w obrębie zestawu akapitów, listy punktowanych punktów lub tabel obrazów i danych.</DD>
+        </DL>
+    </body>      
+    </html>
