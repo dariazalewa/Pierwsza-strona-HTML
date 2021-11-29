@@ -50,5 +50,31 @@
             <p>c) Selektor indentyfikatora - selektor ten jest stosowany, gdy chcemy nadać określone atrybuty formatowania elementowi, <br> który ma przypisany jednoznaczny indentyfikator, czyli występuje raz - w odróżnieniu od klasy. Selektor indentyfikatora ma postać: <br><b>selektor# indentyfikator {właściwość: wartość;}</b> <br> lub <br> <b>#indentyfikator {właściwość: wartość;}</b></p>
             <p> Deklaracja indentyfikatora musi się rozpoczynać znakiem #.</p>
             <p>Przykład: <br> kod w secji head: <br> <b>h3#nag11 {color: yellow;}</b> <br> kod w sekcji body: <br> <b>&lt;h3 id="nag11"&gt;okej&lt;/h3&gt;</b></p>
+            <p>4. Pseudoklasy - dynamiczna zmiana stylu, która może nabywać lub tracić pseudoklase podczas interakcji z użytkownikiem. <br> Przykładem są linki(odsyłacze), które zmieniją wygląd po najechaniu na nie.</p>
+            <p>Odsyłacze (linki) mają właściwości, które określają działanie użytkownika. Są to:</p>
+            <table>
+                <tr><th>:link</th><th> link nieaktywny, które nie został przez uzytkownika odwiedzony</th></tr>
+                <tr><th>:visited</th><th> link odwiedzony, strona była odwiedzana</th></tr>
+                <tr><th>:hover</th><th> link gotowy do kliknięcia, kursor myszy ustawiony pod linkiem</th></tr>
+                <tr><th>active</th><th> link odwiedzany, strona obecnie wczytywana</th></tr>
+            </table>
+            <p>a) Odsyłacz podstawowy (pseudoklasa :link) - nadaje atrybuty formatowania odsyłaczowi, który był otwierany, a informacja o tym zostałą umieszczona w pamięci przeglądarki: <br> <b>a:visited  {właściwość: wartość;}</b></p>
+            <p> Z deklaracją klasy: <br> <b>a.nazwa_klasy:visited  {właściwość: wartość;}</b></p>
+            <p>Przykłady:<br> <b>a:visited {color:pink;}</b><br> Z klasą: <br><b>a.nad:visited {color: pink;}</b></p>
+            <p>b) Wskazanie kursorem myszy (pseudoklasa :hover) - nadaje atrybuty formatowania odsyłaczowi, gdy myszka znajduje się na nim, ale nie aktywuje go: <br> <b>a:hover {właściwość: wartość;}</b></p>
+            <p> Z deklaracją klasy: <br> <b>a.nazwa_klasy:hover  {właściwość: wartość;}</b></p>
+            <p>Przykłady:<br> <b>a:hover {color:pink;}</b><br> Z klasą: <br><b>a.nad:hover {color: pink;}</b></p>
+            <center><h4>UWAGA - Presudoklasa :hover może być używana do definiowania stylów elementów innych niż odsyłacze.</h4></center>
+            <p>c) Odsyłacz aktywny (pseudoklasa :active) - nadaje atrybuty formatowania odsyłaczowi, któy w danej chwili jest aktywny: <br> <b>a:active {właściwość: wartość;}</b></p>
+            <p> Z deklaracją klasy: <br> <b>a.nazwa_klasy:active  {właściwość: wartość;}</b></p>
+            <p>Przykłady:<br> <b>a:active {color:pink;}</b><br> Z klasą: <br><b>a.nad:active {color: pink;}</b></p>
+            <p> Kolejność deklarowania w arkuszu stylów pseudoklas do odsyłączy jest ważna, aby porawnie to działało. <br> Poprawna kolejność:</p>
+            <ol TYPE="1">
+                <li>a:link {właściwość: wartość;} </li>
+                <li>a:visited {właściwość: wartość;} </li>
+                <li>a:hover {właściwość: wartość;} </li>
+                <li>a:active {właściwość: wartość;} </li>
+                </ol>
+            <p>d) Presudoklasa :focus - nadaje atrybuty formatowania odsyłaczowi(wcześniej wybranemu za pośrednictwem klawisza Tab) lub polu formularza, na którym został ustawiony kursor: <br> <b>selektor :focus {właściwość: wartość;}</b></p>
     </body>
 </html> 
