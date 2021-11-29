@@ -12,5 +12,19 @@
             <li><a href="glowna.html"> Powrót do strony głównej </a></li>
           </nav>
           <br>
+          <p> W języku HTML często występuje zagnieżdżanie jednego elementu wewnątrz drugiego. <br> Jeżeli dla elementu nadrzędnego w arkuszach stylów zostały zdefiniowane właściwości, <br>to w większości przypadków elementowi podrzędnemu zostaną pzrypisane te same właściwości. <br> Taki mechanizm nazywamy dziedziczeniem.</p>
+          <center><h3> Selektory</h3></center>
+          <p> Selektorem może być dowolny element języka HTML, dla którego chcemy zdefiniować parametry formatowania. <br> Rodzaje selektorów: <br></p>
+          <ol TYPE="1">
+            <li>Selektory elementów </li>
+            <li>Selektory atrybutów </li>
+            <li>Selektory specjalne </li>
+            <li>Selektory pseudoklas </li>
+            <li>Selektory pseudoelementów </li>
+            </ol>
+            <p> 1. Selektory elementów - selektory elementów wybierają elementy na podstawie ich nazwy. <br>Składnia dla selektorów elementów to podana już podstawowa składnia języka CSS: <br> <b>selektor {właściwość: wartość;}</b></p>
+            <p>a) Selektor typu elementu - podstawowy typ selektora. Służy do definiowania formatowania znaczników występujących na stronie,np. p, h3, table, img: <br> <b>p {color: blue; font-size: 4pt;}</b></p>
+            <p>b) Selektor uniwersalny - inaczej ogólny to selektor pasujący do wszystkich znaczników. Jest oznaczany gwiazdką *.<br> Składnia tego selektora: <br> <b>* {właściwość:wartość;}</b> <br> <br> Zamiast grupować elementy,np.: <br> <b>p, h1, h3, table {font-family:courier new; color:red;}</b> <br> można użyć tego selektora i tej gwiazdki: <br> <b>* {font-family:courier new; color:red;}</b></p>
+            <p>c) Selektor potomka - przy użyciu tego slektora można formatować elementy, które są zawarte wewnątrz innych znaczników: <br> <b> selektor selektor{ właściwość;: wartość;}</b> <br> <br> Jeśli wewnątrz znacznika <b>&lt;div&gt;</b> zostanie umieszczony znacznik <b>&lt;span&gt;</b> to definicja będzie wyglądać następująco: <br> <b>div span {font-size:12pt; color:pink;}</b> </p>
     </body>
-    </html> 
+</html> 
