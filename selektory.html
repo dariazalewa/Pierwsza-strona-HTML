@@ -27,8 +27,8 @@
             <p>b) Selektor uniwersalny - inaczej ogólny to selektor pasujący do wszystkich znaczników. Jest oznaczany gwiazdką *.<br> Składnia tego selektora: <br> <b>* {właściwość:wartość;}</b> <br> <br> Zamiast grupować elementy,np.: <br> <b>p, h1, h3, table {font-family:courier new; color:red;}</b> <br> można użyć tego selektora i tej gwiazdki: <br> <b>* {font-family:courier new; color:red;}</b></p>
             <p>c) Selektor potomka - przy użyciu tego slektora można formatować elementy, które są zawarte wewnątrz innych znaczników: <br> <b> selektor selektor{ właściwość: wartość;}</b> <br> <br> Jeśli wewnątrz znacznika <b>&lt;div&gt;</b> zostanie umieszczony znacznik <b>&lt;span&gt;</b> to definicja będzie wyglądać następująco: <br> <b>div span {font-size:12pt; color:pink;}</b> </p>
             <p>d) Selektor dziecka - służy do definiowania formatowania elementów, które znajdują się o jeden rząd niżej w hierarchi drzewa dokumentu. <br> Składnia tego selektora: <br> <b>rodzic &gt; dziecko {właściwość:wartość;}</b> <br> <br> Symbol &gt; oznacza bezpośredni związek między elementami. Wygląd przykładowej selekcji dziecka: <br> <b>div&gt;span {font-size:12pt; color:pink;}</b></p>
-            <p>e)Selektor sąsiadującego brata - umożliwia on nadanie drugiemu z sąsiadujących elementów zdefiniowanych atrybutów formatowania.Postać selektora: <br> <b> brat1 + brat2 {właściowość: wartość;}</b> <br><br> Przykładowe użycie selektora braci: <br><b>div + span {font-size:12pt; color:pink;}</b> </p>
-            <p>f) Selektor braci - umożliwia nadanie drugiemu i wszystkim następnym sąsiadującym elementom zdefiniowanych atrybutów formatowania.Postać selektora: <br> <b>brat1 ~ brat2 {właściowość: wartość;} </b><br><br> Przykładowe użycie selektora braci:<br> <b>div ~ span {font-size:12pt; color:pink;}</b></p>
+            <p>e)Selektor sąsiadującego brata - umożliwia on nadanie drugiemu z sąsiadujących elementów zdefiniowanych atrybutów formatowania. Postać selektora: <br> <b> brat1 + brat2 {właściowość: wartość;}</b> <br><br> Przykładowe użycie selektora sąsiadujących braci: <br><b>div + span {font-size:12pt; color:pink;}</b> </p>
+            <p>f) Selektor braci - umożliwia nadanie drugiemu i wszystkim następnym sąsiadującym elementom zdefiniowanych atrybutów formatowania. Postać selektora: <br> <b>brat1 ~ brat2 {właściowość: wartość;} </b><br><br> Przykładowe użycie selektora braci:<br> <b>div ~ span {font-size:12pt; color:pink;}</b></p>
             <p>2. Selektory atrybutów - w języku CSS można formatować znaczniki na podstawie atrybutów, <br> które one mają (czyli w skrócie możemy sformatować znaczniki na danych atrybutów). <br> Postać selektora atrybutów: <br> <b>selektor[atrybut="wartość atrybutu"] {właściwość: wartość}</b><br>Przykład:<br><b> p[id="rozowy"] {font-size:12pt; color:pink;}</b></p>
             <p>a) Prosty selektor atrybutu - jest on wykorzystywany dla elementów, którym został określony atrybut, ale jego wartość nie ma znaczenia: <br> <b>selektor[atrybut] {właściwość: wartość;}</b> <br> lub <br> <b>[atrybut] {właściwość: wartość;}</b> <br> <br> Przykładowe użycie: <br> <b>p[id] {font-size:12pt; color:pink;}</b></p>
             <p>b) Selektor atrybutu o określonej wartości - ten rodzaj selektora określa formatowanie, gdy atrybut ma określoną wartość: <br> <b>selektor[atrybut="wartość"] {właściwość: wartość;}</b> <br> lub <br> <b>[atrybut="wartość"] {właściwość: wartość;}</b> <br><br> Przykład: <br> w sekcji head: <br> <b>p[id="center"] {font-size:12pt; color:pink;}</b> <br> w sekcji body: <br> <b>&lt;p id="center"&gt;ok&lt;/p&gt; </b></p>
@@ -48,9 +48,9 @@
             <p>b) Uniwersalny selektor klasy - ta zdefiniowana klasa moż ezotsać użyta do sformatowania dowolnego elementu bez względu na typ znacznika: <br> <b>.nazwa_klasy {właściwość: wartość;}</b></p>
             <p>Przykład: <br> kod w secji head: <br> <b>.nad {color:pink; font-size: 15pt;}</b> <br> kod w sekcji body: <br> <b>&lt;p class="nad"&gt;okej&lt;/p&gt;</b></p>
             <p>c) Selektor indentyfikatora - selektor ten jest stosowany, gdy chcemy nadać określone atrybuty formatowania elementowi, <br> który ma przypisany jednoznaczny indentyfikator, czyli występuje raz - w odróżnieniu od klasy. Selektor indentyfikatora ma postać: <br><b>selektor# indentyfikator {właściwość: wartość;}</b> <br> lub <br> <b>#indentyfikator {właściwość: wartość;}</b></p>
-            <p> Deklaracja indentyfikatora musi się rozpoczynać znakiem #.</p>
+            <p> Deklaracja indentyfikatora musi się rozpoczynać znakiem <b>#</b>.</p>
             <p>Przykład: <br> kod w secji head: <br> <b>h3#nag11 {color: yellow;}</b> <br> kod w sekcji body: <br> <b>&lt;h3 id="nag11"&gt;okej&lt;/h3&gt;</b></p>
-            <p>4. Pseudoklasy - dynamiczna zmiana stylu, która może nabywać lub tracić pseudoklase podczas interakcji z użytkownikiem. <br> Przykładem są linki(odsyłacze), które zmieniją wygląd po najechaniu na nie.</p>
+            <p>4. Pseudoklasy - dynamiczna zmiana stylu. Element otrzymuje lub traci pseudoklasę podczas interakcji z użytkownikiem. <br> Przykładem są linki(odsyłacze), które zmieniają wygląd po najechaniu na nie kursorem myszy, ich kliknięciu lub otwarciu linku.</p>
             <p>Odsyłacze (linki) mają właściwości, które określają działanie użytkownika. Są to:</p>
             <table>
                 <tr><th>:link</th><th> link nieaktywny, które nie został przez uzytkownika odwiedzony</th></tr>
@@ -82,5 +82,7 @@
             <p> Przykład: <br> <b>p:first-line {color:pink; font-size: 15pt;}</b></p>
             <p>b) pierwsza litera (:first-letter) - nadaje odrębne formatowanie pierwszej literze,np. akapitu. <br> Służy do poprawiania wyglądu tekstu poprzez zaprojektowanie ozdobionego inicjału: <br> <b>selektor:first-letter {właściwość: wartość;}</b></p>
             <p> Przykład: <br> <b>p:first-letter {color:pink; font-size: 15pt; font-family: arial;}</b></p>
-        </body>
+            <p> Grupowanie selektorów przez wspólną deklarację, czyli zamaist pisać: <br> <b>p {color: pink;} <br> h2 {color: pink;} <br>li {color: pink;} <br></b></p>
+            <p> Może zastąpić to wspólną definicją stylu: <br> <b>p, h2, li {color: pink;}</b></p>
+    </body>
 </html> 
