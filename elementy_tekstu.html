@@ -32,5 +32,44 @@
             <tr><th>wartość procentowa</th><th> określa odstęp jako wartość procentową obecnego rozmiaru czcionki</th></tr>
         </table>
         <p> Przykład : <br> <br> <b> h2 {line-height: 0.9;} </b><br> <br></p>
+        <p> <u>Ozdabianie tekstu</u> - dodanie efektów, takich jak podkreślenie, <br>przekreślenie tekstu, umieszczenie linii pod tekstem, używając atrybutu text-decoration: <br> <b> selektor {text-decoration: wartość;}</b></p>
+        <p> Wartości określające rodzaj efektu:</p>
+        <table>
+            <tr><th>none</th><th> bez zmian</th></tr>
+            <tr><th>underline</th><th> tekst podkreślony</th></tr>
+            <tr><th>overline</th><th> linia umieszczona nad tekstem</th></tr>
+            <tr><th>line-through</th><th> tekst przekreślony</th></tr>
+            <tr><th>blink</th><th> migotanie tekstu <br> (nie wszystkie przeglądarki interpretują ten efekt)</th></tr>
+        </table>
+        <p> Przykład : <br> kod w języku CSS:<br><br> <b> p {text-decoration: overline;} </b> <br><br> kod w języku HTML:<br><br> <b>&lt;p style="text-decoration: overline;"&gt;ok&lt;/p&gt; </b> <br><br>Rezultat w języku HTML: <br></p>
+        <p style="text-decoration: overline;">ok</p>
+        <p> Wartości można łączyć w jedną deklarację:</p>
+        <p> Przykład : <br> kod w języku CSS:<br><br> <b> p {text-decoration: underline line-through overline;} </b> <br><br> kod w języku HTML:<br><br> <b>&lt;p style="text-decoration: underline line-through overline;"&gt;ok&lt;/p&gt; </b> <br><br>Rezultat w języku HTML: <br></p>
+        <p style="text-decoration: underline line-through overline;;">ok</p>
+        <p> <u>Odstęp między literami</u> - stosujemy tutaj atrybut letter-spacing: <br> <b> selektor {letter-spacing: wartość;}</b></p>
+        <p> Przykład : <br> kod w języku CSS:<br><br> <b> p {letter-spacing: 6px;} </b> <br><br> kod w języku HTML:<br><br> <b>&lt;p style="letter-spacing: 6px;"&gt;witryny internetowe&lt;/p&gt; </b> <br><br>Rezultat w języku HTML: <br></p>
+        <p style="letter-spacing: 6px;">witryny internetowe</p>
+        <p> <u>Odstęp między wyrazami</u> - stosujemy atrybut word-spacing: <br> <b> selektor {word-spacing: wartość;}</b></p>
+        <p> Przykład : <br> kod w języku CSS:<br><br> <b> p {word-spacing: 16px;} </b> <br><br> kod w języku HTML:<br><br> <b>&lt;p style="word-spacing: 16px;"&gt;witryny internetowe&lt;/p&gt; </b> <br><br>Rezultat w języku HTML: <br></p>
+        <p style="word-spacing: 16px;">witryny internetowe</p>
+        <p> <u>Transformacja tekstu</u> - służy do ustawiania i zmiany wielkości liter tekstu. Służy do tego atrybut text-transform: <br> <b> selektor {text-transform: wartość;}</b></p>
+        <p> Atrybut może przyjmować wartości:</p>
+        <table>
+            <tr><th>capitalize</th><th> zamienia na wielkie wszystkie litery wyrazów w zdaniu</th></tr>
+            <tr><th>uppercase</th><th> zamienia wszystkie litery tekstu na wielkie</th></tr>
+            <tr><th>lovercase</th><th> zamienia wszystkie litery tekstu na małe</th></tr>
+            <tr><th>none</th><th> bez transformacji</th></tr>
+        </table>
+        <p> Przykład : <br> kod w języku CSS:<br><br> <b> p {text-transform: capitalize;} </b> <br><br> kod w języku HTML:<br><br> <b>&lt;p style="text-transform: capitalize;"&gt;witryny internetowe&lt;/p&gt; </b> <br><br>Rezultat w języku HTML: <br></p>
+        <p style="text-transform: capitalize;">witryny internetowe</p>
+        <p> <u>Białe znaki</u> - dzięki nim można sterować wyświetlaniem na stronie spacji oraz innych białych znaków. Służy do tego atrybut white-space: <br> <b> selektor {white-space: wartość;}</b></p>
+        <p> Atrybut przyjmuje wartości:</p>
+        <table>
+            <tr><th>normal</th><th> zamienia kilka sąsiednich spacji na jedną. <br> Wiersze tekstu są przełamywane automatycznie.</th></tr>
+            <tr><th>pre</th><th> umożliwia wyświetlanie kilku spacji obok siebie. <br> Wiersze tekstu są przełamywane w miejscu wystąpienia znaku nowej linii (Enter).</th></tr>
+            <tr><th>nowrap</th><th> zamienia kilka sąsiednich spacji na jedną. <br> Wiersze tekstu są przełamywane w miejscu wystąpienia znacznika &lt;br&gt;.</th></tr>
+            <tr><th>pre-wrap</th><th> umożliwia wyświetlanie kilku spacji obok siebie. <br> Wiersze tekstu są przełamywane w miejscu wystąpienia znaku nowej linii (Enter) oraz automatycznie na końcu szerokości strony.</th></tr>
+            <tr><th>pre-line</th><th> umożliwia wyświetlanie kilka sasiednich spacji na jedną. <br> Wiersze tekstu są przełamywane w miejscu wystąpienia znaku nowej linii (Enter)oraz automatycznie na końcu szerokości strony.</th></tr>
+        </table>
     </body>
 </html>
