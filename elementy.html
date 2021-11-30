@@ -6,16 +6,16 @@
       <link rel="stylesheet" type="text/css" href="css.css">
     </head>
     <body>
-        <center><h2> HTML i CSS - Właściwości elementów stylów</h2></center>
+        <center><h2> HTML i CSS - Właściwości elementów stylów -> Czcionki</h2></center>
         <br>
         <nav><B>Rozdziały: </B>
             <li><a href="glowna.html"> Powrót do strony głównej </a></li>
           </nav>
           <br>
-         <p> W kaskadowych arkuszach stylów formatowanie elementów strony jest realizowane przez ustawienie właściwości tych elementów.</p>
-         <center><h3> Czcionki</h3></center>
-         <p> Czcionki to najistotniejszy element strony, który podlega formatowaniu. <br> Za pomocą właściwości czcionki można określić jej rodzinę (font-family), jej styl (font-style), rozmiar (font-size) i pogrubienie (font-weight).</p>
-            <p> Rodzaj czcionki ustala się za pomocą atrybutu font-family: <br> <b> selektor {font-family: rodzaj1, rodzaj2, rodzaj3, ...}</b></p>
+            <p> W kaskadowych arkuszach stylów formatowanie elementów strony jest realizowane przez ustawienie właściwości tych elementów.</p>
+            <center><h3> Czcionki</h3></center>
+            <p> Czcionki to najistotniejszy element strony, który podlega formatowaniu. <br> Za pomocą właściwości czcionki można określić jej rodzinę (font-family), jej styl (font-style), rozmiar (font-size) i pogrubienie (font-weight).</p>
+            <p> <u>Rodzaj czcionki </u> ustala się za pomocą atrybutu font-family: <br> <b> selektor {font-family: rodzaj1, rodzaj2, rodzaj3, ...}</b></p>
             <p> Zamiast podawać nazwy czcionki może użyć rodziny czcionek, w której się ona znajduje:</p>
             <table>
                 <tr><th>serif</th><th> Są to czcionki szyfrowe, mające wykończenie liter i cyfr. <br> Do tej grupy należą m.in.: Times New Roman, Georgia, Bodoni. </th></tr>
@@ -24,9 +24,9 @@
                 <tr><th>cursive</th><th> Są to czcionki mające cechy czcionki pochylonej. <br> Znaki wyglądają jak pisane ręcznie, np. Comic Sans, Florence.</th></tr>
                 <tr><th>fantasy</th><th> Są to czcionki dekoracyjne, np. Impact, OldTown.</th></tr>
             </table>
-            <p> Przykład : <br> <b>&lt;p style="font-family: Arial;"&gt;Czcionka Arial użyta&lt;/p&gt;</b> <br> <br> Rezultat: <br></p>
+            <p> Przykład : <br> <br> <b>&lt;p style="font-family: Arial;"&gt;Czcionka Arial użyta&lt;/p&gt;</b> <br> <br> Rezultat: <br></p>
             <p style="font-family: Arial;">Czcionka Arial użyta</p>
-            <p>Rozmiar czcionki jest definiowany w atrybucie font-size: <br> <b> selektor {font-size: rozmiar;}</b></p>
+            <p> <u>Rozmiar czcionki </u> jest definiowany w atrybucie font-size: <br> <b> selektor {font-size: rozmiar;}</b></p>
             <p> Istnieje 7 słów kluczowych, które pozwalają określić rozmiar czcionki względem rozmiaru podstawowego:</p>
             <table>
                 <tr><th>xx-small</th><th> Czcionka najmniejsza</th></tr>
@@ -37,34 +37,87 @@
                 <tr><th>x-large</th><th> Czcionka większa</th></tr>
                 <tr><th>xx-large</th><th> Czcionka największa</th></tr>
             </table>
-            <p> Przykład : <br> <b>&lt;p style="font-size: xx-small;"&gt;Czcionka xx-small&lt;/p&gt;</b> <br> <b>&lt;p style="font-size: xx-large;"&gt;Czcionka xx-large&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
+            <p> Przykład : <br> <br> <b>&lt;p style="font-size: xx-small;"&gt;Czcionka xx-small&lt;/p&gt;</b> <br> <b>&lt;p style="font-size: xx-large;"&gt;Czcionka xx-large&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
             <p style="font-size: xx-small;">Czcionka xx-small</p>
             <p style="font-size: xx-large;">Czcionka xx-large</p>
             <p> Za pomocą wartości względnych - wielkość czcionki jest ustalana względem wielkości czcionki elementu nadrzędnego: </p>
-            <ol TYPE="1">
-                <li>smaller - czcionka mniejsza od bieżącej, </li>
-                <li>larger - czcionka większa od bieżącej. </li>
-                </ol>
-                <p> Przykład : <br> <b>&lt;p style="font-size: smaller;"&gt;mniejsza&lt;/p&gt;</b> <br> <b>&lt;p&gt;zwykła&lt;/p&gt;</b> <br><b>&lt;p style="font-size: larger;"&gt;większa&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
-                <p style="font-size: smaller;">mniejsza</p>
-                <p>zwykła</p>
-                <p style="font-size: larger;">większa</p>
-                <p> Jednostki, które można użyć do określenia wielkości czcionki:</p>
-                <ul TYPE="square">
-                    <li> piksele (px),</li>
-                    <li> punkty (pt),</li>
-                    <li> centymetry (cm),</li>
-                    <li> cale (in),</li>
-                    <li> milimetry (mm),</li>
-                    <li> pica (pc),</li>
-                    <li> em (em).</li>
-                </ul>
-                <p> Przykład : <br> <b>&lt;p style="font-size: 14pt;"&gt;ok&lt;/p&gt;</b> <br><b>&lt;p style="font-size: 2cm;"&gt;ok&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
-                <p style="font-size: 14pt;">ok</p>
-                <p style="font-size: 2cm;">ok</p>
-                <p> Wielkość podana w procentach też jest możliwa. Wartości procentowe określają wielkość czcionki w stosunku do rozmiaru podstawowego.</p>
-                <p> Przykład : <br> <b>&lt;p style="font-size: 149%;"&gt;ok&lt;/p&gt;</b> <br><b>&lt;p style="font-size: 75%;"&gt;ok&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
-                <p style="font-size: 149%;">ok</p>
-                <p style="font-size: 75%;">ok</p>
+            <table>
+                <tr><th>smaller</th><th> czcionka mniejsza od bieżącej</th></tr>
+                <tr><th>larger</th><th> czcionka większa od bieżącej</th></tr>
+            </table>
+            <p> Przykład : <br><br> <b>&lt;p style="font-size: smaller;"&gt;mniejsza&lt;/p&gt;</b> <br> <b>&lt;p&gt;zwykła&lt;/p&gt;</b> <br><b>&lt;p style="font-size: larger;"&gt;większa&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
+            <p style="font-size: smaller;">mniejsza</p>
+            <p>zwykła</p>
+            <p style="font-size: larger;">większa</p>
+            <p> Jednostki, które można użyć do określenia wielkości czcionki:</p>
+            <table>
+                <tr><th>px</th><th> piksele</th></tr>
+                <tr><th>pt</th><th> punkty</th></tr>
+                <tr><th>cm</th><th> centymetry</th></tr>
+                <tr><th>in</th><th> cale</th></tr>
+                <tr><th>mm</th><th> milimetry</th></tr>
+                <tr><th>pc</th><th> pica</th></tr>
+                <tr><th>em</th><th> em</th></tr>
+            </table>
+            <p> Przykład : <br><br> <b>&lt;p style="font-size: 14pt;"&gt;ok&lt;/p&gt;</b> <br><b>&lt;p style="font-size: 2cm;"&gt;ok&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
+            <p style="font-size: 14pt;">ok</p>
+            <p style="font-size: 2cm;">ok</p>
+            <p> Wielkość podana w procentach też jest możliwa. Wartości procentowe określają wielkość czcionki w stosunku do rozmiaru podstawowego.</p>
+            <p> Przykład : <br><br> <b>&lt;p style="font-size: 149%;"&gt;ok&lt;/p&gt;</b> <br><b>&lt;p style="font-size: 75%;"&gt;ok&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
+            <p style="font-size: 149%;">ok</p>
+            <p style="font-size: 75%;">ok</p>
+            <p> Zastosowanie responsywnego rozmiaru czcionki - ustawiamy go za pomocą jednostki <b>vw</b>(ang.<b>viewport width</b>). <br> Dzięki niemu rozmiar tekstu widocznego będzie związany z rozmiarem okna przeglądarki. <br> Jednostka vw oznacza 1% aktualnego rozmiaru szerokości okna, w którym wyświetlana jest zawartośc strony.</p>
+            <p> Przykład : <br><br> <b>&lt;p style="font-size: 14;"&gt;ok&lt;/p&gt;</b> <br><b>&lt;p style="font-size: 5vw;"&gt;ok&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
+            <p style="font-size: 14;">ok</p>
+            <p style="font-size: 5vw;">ok</p>
+            <p> <u>Styl czcionki</u> jest definiowany za pomocą atrybutu font-style: <br> <b> selektor {font-style: styl;}</b></p>
+            <p> Dostępne są trzy style:</p>
+            <table>
+                <tr><th>normal</th><th> Czcionka podstawowa</th></tr>
+                <tr><th>italic</th><th> Czcionka pochylona</th></tr>
+                <tr><th>oblique</th><th> Czcionka pochylona <br>(automatycznie wybierana jak niedostępny jest italic)</th></tr>
+            </table>
+            <p> Przykład : <br> <br> <b>&lt;p style="font-style: italic;"&gt;ok - styl italic&lt;/p&gt;</b><br> <b>&lt;p&gt;ok - styl normal&lt;/p&gt;</b><br> <b>&lt;p style="font-style: oblique;"&gt;ok - styl oblique&lt;/p&gt;</b><br><br> Rezultat: <br></p>
+            <p style="font-style: italic;">ok - styl italic</p>
+            <p>ok - styl normal</p>
+            <p style="font-style: oblique;">ok - styl oblique</p>
+            <p> <u> Wariant czcionki</u> określany przez atrybut font-variant pozwala wybrać międzu normalną czcionką a kapitalikami <br> (wyświetla duże litery w rozmiarze czcionki przeznaczonej dla małych): <br> <b> selektor {font-variant: wartość;}</b></p>
+            <p> Wartości dla atrybutu font-variant:</p>
+            <table>
+                <tr><th>normal</th><th> czcionka normalna</th></tr>
+                <tr><th>small-caps</th><th> kapitaliki</th></tr>
+            </table>
+            <p> Przykład : <br><br> <b>&lt;p&gt;ok - czcionka normalna&lt;/p&gt;</b> <br><b>&lt;p style="font-variant: small-caps;"&gt;ok - kapitaliki&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
+            <p>ok - czcionka normalna</p>
+            <p style="font-variant: small-caps;">ok - kapitaliki</p>
+            <p> <u>Waga czcionki</u> za pomocą atrybutu font-weight może określić wagę czcionki: <br> <b> selektor {font-weight: wartość;}</b></p>
+            <p> Wartości określające wagę czcionki:</p>
+            <table>
+                <tr><th>normal</th><th> czcionka normalna</th></tr>
+                <tr><th>bold</th><th> czcionka pogrubiona</th></tr>
+                <tr><th>100, 200, 300, 400(równoważne z normal), <br>500, 600, 700(równoważne z bold), <br>800, 900 </th><th> określa wagę czcionki,  <br>ale nie każda czcionka ma wszystkie 9 stopni grubości.</th></tr>
+            </table>
+            <p> Można użyć wartości względnych:</p>
+            <table>
+                <tr><th>lighter</th><th> czcionka mniej wytłuszczona od domyślnie przypisanej</th></tr>
+                <tr><th>bolder</th><th> czcionka bardziej wytłuszczona od domyślnie przypisanej</th></tr>
+            </table>
+            <p> Przykład : <br><br> <b>&lt;p style="font-weight: normal;"&gt;ok - czcionka normalna&lt;/p&gt;</b> <br> <b>&lt;p style="font-weight: bold;"&gt;ok - czcionka pogrubiona&lt;/p&gt;</b> <br><b>&lt;p style="font-weight: 900;"&gt;ok - czcionka bardziej pogrubiona&lt;/p&gt;</b> <br><br> Rezultat: <br></p>
+            <p style="font-weight: normal;">ok - czcionka normalna</p>
+            <p style="font-weight: bold;">ok - czcionka pogrubiona</p>
+            <p style="font-weight: 900;">ok - czcionka bardziej pogrubiona</p>
+            <p> <u>Atrybuty czcionki</u>:</p>
+            <table>
+                <tr><th>1.</th><th> font-style</th></tr>
+                <tr><th>2.</th><th> font-variant</th></tr>
+                <tr><th>3.</th><th> font-weight</th></tr>
+                <tr><th>4.</th><th> font-size</th></tr>
+                <tr><th>5.</th><th> font-family</th></tr>
+            </table>
+            <p> Jeśli chcemy zawrzeć kilka atrybutów dla czcionki równocześnie używamy: <br> <b> selektor {font: wartości  atrybutów;}</b></p>
+            <p> Jako wartości atrybutów wstawiamy wartości, które będą definiowane dla czcionek. Należy oddzielić je od siebie spacjami. <br> Powinny one zostać też zapisane w powyższej kolejności, inaczej niektóre atrybute będą pomijane lub źle interpretowane. <br> Niektóre atrybuty możemy pomijać, lecz wartości dla atrybutów font-size oraz font-family są wymagane.</p>
+            <p> Przykład : <br><br> <b>&lt;p style="font: oblique small-caps 700 14pt Times New Roman"&gt;ok - przykładowe użycie wszystkich atrybutów czcionki nr.1&lt;/p&gt;</b> <br> <b>&lt;p style="font: 500 1cm Impact"&gt;ok - przykładowe użycie wszystkich atrybutów czcionki nr.2&lt;/p&gt;</b><br><br> Rezultat: <br></p>
+            <p style="font: oblique small-caps 700 14pt Times New Roman">ok - przykładowe użycie wszystkich atrybutów czcionki nr.1</p>
+            <p style="font: 500 1cm Impact">ok - przykładowe użycie wszystkich atrybutów czcionki nr.2</p>
     </body>
 </html>

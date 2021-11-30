@@ -16,3 +16,6 @@ figure {
   margin-inline-start: 1px;
   margin-inline-end: 1px;
 }
+p {
+  font-size: 12.5pt;
+}
