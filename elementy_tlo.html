@@ -9,9 +9,35 @@
         <center><h2> HTML i CSS - Właściwości elementów stylów -> Tło i kolor</h2></center>
         <br>
         <nav><B>Rozdziały: </B>
-            <li><a href="glowna.html"> Powrót do strony głównej </a></li>
+        <li><a href="glowna.html"> Powrót do strony głównej </a></li>
         </nav>
         <br>
-        
+        <p> W języku CSS kolor tekstu oraz właściwości tła można definiować dla różnych elementów z użyciem stylów.</p>
+        <p> <u>Kolor</u> - korzystając z atrybutu color, można opisać pierwszoplanowy kolor wybranego elementu: <br> <b> selektor {color: wartość;}</b></p>
+        <p> Przykład : <br> <br> <b> h3 {color: rebeccapurple;} </b><br> <br> Rezultat: <br></p>
+        <h3 style="color: rebeccapurple;">ok</h3>
+        <p> <u>Kolor tła</u> - definiowany za pomocą atrybutu background-color: <br> <b> selektor {background-color: wartość;}</b></p>
+        <p> Przykłady : <br> <br> <b> h3 {background-color: red;} </b><br> <b> &lt;p style="background-color: lightskyblue;"&gt;ok&lt;/p&gt;</b><br> <b> body {background-color: green;} </b><br><br> Rezultat: <br></p>
+        <p style="background-color: lightskyblue;">ok</p>
+        <p> <u> Grafika jako tło</u> - służy do tego atrybut background-image: <br> <b> selektor {background-image: wartość;}</b></p>
+        <p> Wartością jest nazwa pliku, w którym została zapisana grafika.</p>
+        <p> Przykład : <br> <br> <b> body {color: yellow; background-image: url("obrazy.jpg");} </b><br></p>
+        <p> <u>Powtarzanie grafiki w tle</u> - można określić sposób jego powtarzania, stosując atrybut background-repeat: <br> <b> selektor {background-repeat: wartość;}</b></p>
+        <p> Wartości, które można wybrać dla powtarzania:</p>
+        <table>
+            <tr><th>repeat</th><th> powtarzanie tła w obu kierunkach</th></tr>
+            <tr><th>repeat-x</th><th> powtarzanie tła tylko w kierunku poziomym</th></tr>
+            <tr><th>repeat-y</th><th> powtarzanie tła tylko w kierunku pionowym</th></tr>
+            <tr><th>no-repeat</th><th> brak powtarzania tła</th></tr>
+        </table>
+        <p> Przykład: <br> <br> <b> body {background-color: yellow; background-image: url("obrazy.jpg";) background-repeat: repeat-x;} </b></p>
+        <p> <u>Blokada grafiki w tle</u> - aby grafika nie przesuława się z tekstem,gdy używamy suwaka na stronie,używamy atrybutu background-attachment: <br> <b> selektor {background-attachment: blokada;}</b></p>
+        <p> Jako wartość blokady można wybrać:</p>
+        <table>
+            <tr><th>scroll</th><th> przewijanie tła</th></tr>
+            <tr><th>fixed</th><th> tło nieruchome względem przeglądarki</th></tr>
+            <tr><th>local</th><th> tło nieruchome względem elementu, dla którego zostało zdefiniowane</th></tr>
+        </table>
+        <p> Przykład: <br> <br> <b> body {background-color: blue; background-image: url("obrazy.jpg";) background-repeat: no-repeat; background-attachment: fixed;} </b></p>
     </body>
 </html>
