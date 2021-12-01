@@ -12,6 +12,68 @@
         <li><a href="glowna.html"> Powrót do strony głównej </a></li>
         </nav>
         <br>
-       
+        <p> Wzystkie elementy projektowane w języku HTML można traktować jak prostokątne bloki odpowiednio sformatowane i rozmieszczone na stronie internetowej. <br> Każdy z takich bloków ma:</p>
+        <center><img src="model.png" alt="model" width="299" height="241"> <br> <br></center>
+        <p> · <b>Margin</b> - margines wokół ramki (margines zewnętrzny). Jest to pusty obszar wokół ramki, nie ma korolu tła i jest przezroczysty.</p>
+        <p> · <b>Border</b> - obramowanie wokół zawartości elementu; ma styl i kolor.</p>
+        <p> · <b>Padding</b> - odstęp między obramowaniem i zawartością elementu (margines wewnętrzny).</p>
+        <p> · <b>Content</b> - zawartość elementu,np, teksty lub obrazy(na rysunku jest to niebieskie tło).</p>
+        <p> <u>Obramowanie (border)</u> - obramowanie to ramka narysowana wokół elementu. <br> Obramowanie może być wykorzystywane do dekoracji elementu lub do oddzielenia go od innych elementów.</p>
+        <p>a) Szerokośc obramowania - służy do tego atrybut border-width.<br> Przy jego użyciu można definiować obramowanie jednakowe dla wszystkich krawędzi lub dla każdej z osobna: <br> <b> selektor {border-width: wartości;}</b></p>
+        <p> Atrybuty:</p>
+        <table>
+            <tr><th>jedna wartość</th><th> jednakowa szerokość dla wszystkich krawędzi</th></tr>
+            <tr><th>dwie wartości</th><th> taka sama szerokość dla krawędzi poziomych i <br>taka sama szerokość dla krawędzi pionowych</th></tr>
+            <tr><th>trzy wartości</th><th> pierwsza wartość określa szerokość krawędzi górnej, <br> druga jednocześnie szerokośc dwóch krawędzi pionowych, <br> a trzecia szerokość krawędzi dolnej</th></tr>
+            <tr><th>cztery wartości</th><th> każda wartość określa osobno szerokość kolejnych krawędzi <br> (górnej, prawej, dolnej, lewej)</th></tr>
+        </table>
+        <p> Szerokość może być definiowana w dowolnych jednostkach lub za pomocą trzech wartości:</p>
+        <table>
+            <tr><th>thin</th><th> cienkie obramowanie</th></tr>
+            <tr><th>medium</th><th> średnie obramowanie</th></tr>
+            <tr><th>thick</th><th> grube obramowanie</th></tr>
+        </table>
+        <p> Definiowanie szerokości pojedynczych krawędzi - atrybuty przypisane do poszczególnych krawędzi:</p>
+        <p> · Atrybut border-top-width definiuje szerokość górnej krawędzi: <br> <b> selektor {border-top-width: szerokość;}</b></p>
+        <p> · Atrybut border-bottom-width definiuje szerokość dolnej krawędzi: <br> <b> selektor {border-bottom-width: szerokość;}</b></p>
+        <p> · Atrybut border-left-width definiuje szerokość lewej krawędzi: <br> <b> selektor {border-left-width: szerokość;}</b></p>
+        <p> · Atrybut border-right-width definiuje szerokość prawej krawędzi: <br> <b> selektor {border-right-width: szerokość;}</b></p>
+        <p> Przykład : <br> <br> <b> h2 {border-bottom-width: 20px;} </b><br><b> p {border-width: thick;} </b></p>
+        <p>b) Styl obramowania - służy do tego atrybut border-style.<br> Przy jego użyciu można definiować styl obramowanie jednakowy dla wszystkich krawędzi lub dla każdej inny: <br> <b> selektor {border-style: wartości;}</b></p>
+        <p> Atrybuty:</p>
+        <table>
+            <tr><th>jedna wartość</th><th> jednakowy styl dla wszystkich krawędzi</th></tr>
+            <tr><th>dwie wartości</th><th> taki sam styl dla krawędzi poziomych i <br>taki sam styl dla krawędzi pionowych</th></tr>
+            <tr><th>trzy wartości</th><th> pierwsza wartość określa styl krawędzi górnej, <br> druga jednocześnie styl dwóch krawędzi pionowych, <br> a trzecia styl krawędzi dolnej</th></tr>
+            <tr><th>cztery wartości</th><th> każda wartość określa osobno styl kolejnych krawędzi <br> (górnej, prawej, dolnej, lewej)</th></tr>
+        </table>
+        <p> Definiowanie stylu pojedynczych krawędzi - atrybuty przypisane do poszczególnych krawędzi:</p>
+        <p> · Atrybut border-top-style definiuje styl górnej krawędzi: <br> <b> selektor {border-top-style: styl;}</b></p>
+        <p> · Atrybut border-bottom-style definiuje styl dolnej krawędzi: <br> <b> selektor {border-bottom-style: styl;}</b></p>
+        <p> · Atrybut border-left-style definiuje styl lewej krawędzi: <br> <b> selektor {border-left-style: styl;}</b></p>
+        <p> · Atrybut border-right-style definiuje styl prawej krawędzi: <br> <b> selektor {border-right-style: styl;}</b></p>
+        <p> Wartości, które mogą być przypisane do stylów obramowania:</p>
+        <table>
+            <tr><th>none</th><th> brak obramowanie</th></tr>
+            <tr><th>hidden</th><th> obramowanie ukryte</th></tr>
+            <tr><th>dotted</th><th> linia kropkowana</th></tr>
+            <tr><th>dashed</th><th> linia kreskowana</th></tr>
+            <tr><th>solid</th><th> linia ciągła</th></tr>
+            <tr><th>double</th><th> linia ciągła <br> podwójna</th></tr>
+            <tr><th>groove</th><th> „rowek”</th></tr>
+            <tr><th>ridge</th><th> „grzbiet”</th></tr>
+            <tr><th>inset</th><th> „ramka”</th></tr>
+            <tr><th>outset</th><th> „przycisk”</th></tr>
+        </table>
+        <center><h4>UWAGA - Przy projektowaniu ramek obowiazkowe jest podanie wartości dla stylu i dla szerokości.</h4></center>
+        <p>c) Kolor obramowania - służy do tego atrybut border-color. <br> Jako wartości koloru możemy użyć kodu zapisanego heksadecymalnie(#ff00ff), kodu rgb(r,g,b) lub ich nazw: <br> <b> selektor {border-color: kolor;}</b></p>
+        <p> Podobnie jak w przypadku innych atrybutów obramowania, możliwe jest podanie jednej, dwóch, trzech lub czterech wartości koloru.</p>
+        <p> Atrybuty do definiowania koloru pojedynczych krawędzi:</p>
+        <p> · border-top-color</p>
+        <p> · border-bottom-color</p>
+        <p> · border-left-color</p>
+        <p> · border-right-color</p>
+        <p>d) Atrybuty obramowania - podobnie jak w przypadku tła, używając atrybutu border, można zdefiniować jednocześnie kilka właściwości obramowania: <br> <b> selektor {border: wartości_atrybutów;}</b></p>
+        <p> Wartości atrybutów dotyczą szerokości(width), stylu(style) i koloru(color). <br> Mogą być wpisane w dowolnej kolejności i muszą być oddzielone znakiem spacji.</p>
     </body>
 </html>
