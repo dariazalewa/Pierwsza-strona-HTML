@@ -194,5 +194,22 @@
         <p>d) Odstęp między komórkami - do tego służy atrybut border-spacing: <br> <b> selektor: {border-spacing: odstęp;}</b></p>
         <p>e) Szerokość i wysokość tabeli - atrybuty width i height do tego służą:</p>
         <p> Przykład: <br><br> <b>table {width: 100%;}</b> <br> <b>th {height: 60px;}</b></p>
+        <center><h3>Pozycjonowanie</h3></center>
+        <p> Pozycjonowanie pozwala zdefiniować położenie elementów na stronie internetowej. Do pozycjonowania służy atrybut position: <br> <b> selektor {position: rodzaj; parametry;}</b></p>
+        <p> Parametr rodzaj określa sposób pozycjonowania elementu i może przyjmować wartości:</p>
+        <table>
+            <tr><th>static</th><th> przywraca normalne pozycjonowanie elementu. <br> Jest to wartość przydatna wtedy, gdy wcześniej (np. w arkuszach stylów) <br> została podana deklaracja pozycjonowania tego typu elementów</th></tr>
+            <tr><th>relative</th><th> (inaczej: pozycjonowanie względne) - pozwala przesunąć wybrany <br>element w inne miejsce w stosunku do położenia pierwszego</th></tr>
+            <tr><th>absolute</th><th> pozwala przesunąć wybrany element w inne miejsce <br> względem brzegów strony lub bloku</th></tr>
+            <tr><th>fixed</th><th> działa podobnie jak pozycjonowanie absolutne, ale pozycjonowanie fixed <br> ustala położenie elementu zawsze względem krawędzi okna przeglądarki</th></tr>
+        </table>
+        <p> Jako parametr należy podawać:</p>
+        <table>
+            <tr><th>left: wartość;</th><th> przesunięcie o określoną wartość w stosunku do lewej krawędzi położenia pierwotnego</th></tr>
+            <tr><th>top: wartość;</th><th> przesunięcie o określoną wartość w stosunku do górnej krawędzi położenia pierwotnego</th></tr>
+            <tr><th>right: wartość;</th><th> przesunięcie o określoną wartość w stosunku do prawej krawędzi położenia pierwotnego</th></tr>
+            <tr><th>bottom: wartość;</th><th> przesunięcie o określoną wartość w stosunku do dolnej krawędzi położenia pierwotnego</th></tr>
+        </table>
+        <p> Można łączyć ze sobą różne parametry. Trzeba jednak pamiętać o tym, że parametr left ma pierwszeństwo przed right, a parametr top ma pierwszeństwo przed bottom.</p>
     </body>
 </html>
