@@ -112,5 +112,34 @@
             <tr><th>cztery wartości</th><th> każda wartość określa osobno marginesy <br> górny, prawy, dolny, lewy</th></tr>
         </table>
         <p> Jeśli chcemy pominąć jeden z marginesów wewnętrznych, należy wpisać wartość 0.</p>
+        <p> <u>Obrys</u> - obramowanie wokół elementu może być tworzone również poprzez zdefioniowanie obrysu.<br> Obrys różni się od obramowania tym, że:</p>
+        <p> · nie zajmuje miejsca, dzięki czemu nie wpływa na rozmiar i położenie elementu</p>
+        <p> · jest tworzony na wierzchu elementu</p>
+        <p> · jest definiowany dla wszystkich krawędzi równocześnie</p>
+        <p> Obrys możemy definiować przy użyciu atrybutu outline: <br> <b> selektor {outline: wartości;}</b></p>
+        <p> W wartości możemy wybrać styl(style), kolor(color) i grubość(width) obrysu. <br> Obowiązkowym atrybutem jest styl obrysu, pozostałe dwa to opcjonalne.</p>
+        <p> Przykład: <br><br> <b> h3 {outline-style: daashed;}</b> <br> <b> p {outline: solid  4px blue;}</b></p>
+        <p> <u>Rozmiary elementów</u> - w modelu blokowym można ustalać dokładne rozmiary różnych elementów, np. akapitu, tabeli, bloku div, obrazka.</p>
+        <p>a) Szerokość - do definiowania szerokości elementu służy atrybut width: <br> <b> selektor {width: szerokość;}</b></p>
+        <p> Przykład: <br><br> <b> h4 {width: 10%;}</b></p>
+        <p>b) Szerokość minimalna - do definiowania szerokości minimalnej elementu służy atrybut min-width: <br> <b> selektor {min-width: szerokość;}</b></p>
+        <p> Przykład: <br><br> <b> img {min-width: 100px;}</b></p>
+        <p>c) Szerokość maksymalna - do definiowania szerokości maksymalnej elementu służy atrybut max-width: <br> <b> selektor {max-width: szerokość;}</b></p>
+        <p> Przykład: <br><br> <b> img {max-width: 300px;}</b></p>
+        <p>d) Wysokość - do definiowania wysokości elementu służy atrybut height: <br> <b> selektor {height: wysokość;}</b></p>
+        <p> Przykład: <br><br> <b> h4 {height: 400px;}</b></p>
+        <p>e) Wysokość minimalna - do definiowania wysokości minimalnej elementu służy atrybut min-height: <br> <b> selektor {min-height: wysokość;}</b></p>
+        <p> Przykład: <br><br> <b> img {min-height: 2cm;}</b></p>
+        <p>f) Wysokość maksymalna - do definiowania wysokości maksymalnej elementu służy atrybut max-height: <br> <b> selektor {max-height: wysokość;}</b></p>
+        <p> Przykład: <br><br> <b> img {max-height: 5cm;}</b></p>
+        <p>g) Przepełnienie - określa co zrobić, gdy zawartość elementu nie mieści się w rozmiarach podanych przez width oraz height. Służy do tego atrybut overflow: <br> <b> selektor {overflow: sposób;}</b></p>
+        <p> Wartościami parametru overflow mogą być:</p>
+        <table>
+            <tr><th>visible</th><th> pokazywana jest cała zawartość elementu, <br> niezależnie od zdefiniowanego rozmiaru</th></tr>
+            <tr><th>hidden</th><th> treść niemieszcząca się w zdefiniowanym romiarze elementu zostanie ukryta</th></tr>
+            <tr><th>scroll</th><th> przepełnienie i dodaje pasek przewijania</th></tr>
+            <tr><th>auto</th><th> jeśli jest to konieczne, suwaki zostaną wyświetlone</th></tr>
+        </table>
+        <p> Atrybut overflow można używać tyko dla elementów blokowych ze zdefiniowaną wysokością. Domyślną wartością jest visible, co oznacza, że element nie jest przycinany.</p>
     </body>
 </html>
