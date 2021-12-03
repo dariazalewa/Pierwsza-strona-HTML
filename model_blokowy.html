@@ -213,5 +213,7 @@
         <p> Można łączyć ze sobą różne parametry. Trzeba jednak pamiętać o tym, że parametr left ma pierwszeństwo przed right, a parametr top ma pierwszeństwo przed bottom.</p>
         <p> <u>Przezroczystość</u> - przy użyciu atrybutu opacity można zdefiniować przezroczystość dla elementów wstawianych na stronę: <br> <b> selektor {opacity: nieprzezroczystość;}</b></p>
         <p> Parametr nieprzezroczystość to liczba od 0,0 do 1,0. 0 oznacza całkowitą przezroczystość, 1 - brak przezroczystości.</p>
+        <p> <u>Nakładanie elementów (warstwy)</u> - określa jak elementy będą na siebie nakładane, jeśli będą na siebie nachodzić. Służy do tego atrybut position. <br> Nakładającym się elementom można nadać numer (z-index) i zastosować regułę, że elementy z wyższym numeremi będą nakładane na elementy z niższym numerem: <br> <b> selektor {position: rodzaj; parametry; z-index: numer;}</b></p>
+        <p> Przykład: <br><br> <b> #blok3 {position: relative; left; 120px; top: -160px; z-index: 3;}</b></p>
     </body>
 </html>
