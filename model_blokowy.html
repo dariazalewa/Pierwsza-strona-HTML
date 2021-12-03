@@ -231,5 +231,17 @@
         </table>
         <p> <u>Kolumny na stronie</u> - może być do tego wykorzystywany atrybut float. W tym celu musimy zawartość każdej kolumny zawrzeć w znaczniku &lt;div&gt;. <br> Następnie przy tzrech kolumnach, należy określić szerokość każdego znacznika &lt;div&gt;. Po zdefiniowaniu dla każdego znacznika &lt;div&gt; atrybut float: left uzyskamy „pływanie” kolejnych kolumn z lewej strony.</p>
         <p> Przykład: <br><br> <b> div { width: 20%; float: left; margin: 5px;}</b> <br><br> </p>
+        <center><h3>Sposoby wyświetlania elementów</h3></center>
+        <p> Jeżeli chcemy zrezygnować z wyświetlania elementu na stronie, możemy użyć atrybutu display: <br> <b> selektor {display: sposób;}</b></p>
+        <p> Parametr atrybutu określa sposób pokazywania elementu na stronie i może przyjmować wartości:</p>
+        <table>
+            <tr><th>block</th><th> element wyświetlany jako element blokowy z odstępami od góry i od dołu</th></tr>
+            <tr><th>inline</th><th> element wyświetlany w linii z innymi elementami</th></tr>
+            <tr><th>list-item</th><th> element wyświetlany jako element wykazu listy &lt;li&gt;</th></tr>
+            <tr><th>none</th><th> element nie będzie wyświetlany</th></tr>
+            <tr><th>inline-block</th><th> element będzie wyświetlany podobnie jak element zastępowany</th></tr>
+            <tr><th>run-in</th><th> jeżeli po elemencie występuje element będący blokiem, <br> to ten pierwszy element zostanie wyświetlony w jednej linii z blokiem</th></tr>
+        </table>
+        <center><h4>UWAGA - element zastępowany to element, dla którego instnieje tylko wymiar wewnętrzny,np.&lt;input&gt;,&lt;textarea&gt;,&lt;select&gt;,&lt;object&gt;.</h4></center>
     </body>
 </html>
