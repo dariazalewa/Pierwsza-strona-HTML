@@ -215,5 +215,19 @@
         <p> Parametr nieprzezroczystość to liczba od 0,0 do 1,0. 0 oznacza całkowitą przezroczystość, 1 - brak przezroczystości.</p>
         <p> <u>Nakładanie elementów (warstwy)</u> - określa jak elementy będą na siebie nakładane, jeśli będą na siebie nachodzić. Służy do tego atrybut position. <br> Nakładającym się elementom można nadać numer (z-index) i zastosować regułę, że elementy z wyższym numeremi będą nakładane na elementy z niższym numerem: <br> <b> selektor {position: rodzaj; parametry; z-index: numer;}</b></p>
         <p> Przykład: <br><br> <b> #blok3 {position: relative; left; 120px; top: -160px; z-index: 3;}</b></p>
+        <p> <u>Obcinanie elementu</u> - do wycięcia z elementu jego fragmentu wkształcie prostokąta służy atrybut position-absolute; clip: rect; z odpowiednimi parametrami: <br> <b> selektor {position: absolute; clip: rect(góra, dół, prawa, lewa);}</b></p>
+        <p> Wartości: góra, dół, prawo, lewo oznaczają współrzędne wyciętego prostokąta.</p>
+        <p> <u>Wyrównanie w pionie</u> - pozwala zdefiniować wyrównianie elementu w stosunku do innych elementów strony przez atrybut vertical-align: <br> <b> selektor {vertical-align: sposób;}</b></p>
+        <p> Jako wartość parametru sposób należy podać:</p>
+        <table>
+            <tr><th>baseline</th><th> wyrównuje linię bazową elementu do linii elementu nadrzędnego</th></tr>
+            <tr><th>middle</th><th> ustawia element na środku wysokości elementów sąsiednich</th></tr>
+            <tr><th>text-top</th><th> wyrównuje górną krawędź elementu do górnej krawędzi tekstu elementu nadrzędnego</th></tr>
+            <tr><th>text-bottom</th><th> wyrównuje podstawę elementu do podstawy tekstu elementu nadrzędnego</th></tr>
+            <tr><th>super</th><th> ustawia element jako indeks górny</th></tr>
+            <tr><th>sub</th><th> ustawia element jako indeks dolny</th></tr>
+            <tr><th>top</th><th> wyrównuje górną krawędź elementu do górnej krawędzi najwyższego elementu w linii</th></tr>
+            <tr><th>bottom</th><th> wyrównuje podstawę elementu do podstawy elementu położonego najniżej w linii</th></tr>
+        </table>
     </body>
 </html>
