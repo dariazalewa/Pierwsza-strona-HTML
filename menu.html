@@ -16,9 +16,9 @@
         <p> <u> Lista menu</u> - budowanie listy zaczynamy od utworzenia listy w języku HTML. <br> Lista ta powinna zawierać linki do odpowiednich miejsc wywoływanych przez menu.</p>
         <p> Przykład: <br> <b>
             &lt;ul&gt; <br> 
-            &lt;li&gt; &lt;a href="start.html"&gt;Start&lt;/a&gt;&lt;/li&gt; <br>
-            &lt;li&gt; &lt;a href="nowe.html"&gt;Aktualności&lt;/a&gt;&lt;/li&gt; <br>
-            &lt;li&gt; &lt;a href="usługi.html"&gt;Usługi&lt;/a&gt;&lt;/li&gt; <br>
+            &lt;li&gt;&lt;a href="start.html"&gt;Start&lt;/a&gt;&lt;/li&gt; <br>
+            &lt;li&gt;&lt;a href="nowe.html"&gt;Aktualności&lt;/a&gt;&lt;/li&gt; <br>
+            &lt;li&gt;&lt;a href="usługi.html"&gt;Usługi&lt;/a&gt;&lt;/li&gt; <br>
             &lt;/ul&gt; </b><br></p>
         <p> Po stworzeniu listy, dobrym rozwiązaniem jest zdefiniowanie dla znacznika &lt;ul&gt; indentyfikatora lub klasy, aby w wyniuku formatowania tworzonego menu nie doprowadzić do przeformatowania zwykłych list, które mogą znaleźć się na stronie. Pozwoli to również na umieszczanie na stronie kilku różnie wyglądających zestawów menu. <br> 
         Zanim przystąpimy do definiowania menu, na pzrygotowanej liście trzeba usunąć punktory oraz wyzerować marginesy. Należy również zadeklarować wyświetlanie listy w bloku oraz określić szerokość tego bloku.</p>
@@ -149,5 +149,63 @@
             padding: 6px 3px 3px 6px; <br>
       } <br></b></p>
       <p> Umieszczanie elementów w blokach daje możliwość zdefiniowania jednakowej szerokości wszystkich pozycji menu oraz ustalenia odległości między pozycjami.<br> Trzeba również pamiętać o przypisaniu właściwości clear następnemu elementowi strony w celu uniknięcia „przyklejenia" tego elementu do menu.</p>
+      <center><h3>Menu zagnieżdżone</h3></center>
+      <p> Podobnie jak w przypadku menu pionowego lub poziomego, budując menu zagnieżdżone, należy zacząć od utworzenia listy. Lista powinna zawierać linki do odpowiednich miejsc wywołanych przez menu.</p>
+      <p> Przykład: <br> <b>
+        &lt;ul id="blok"&gt; <br> 
+        &lt;li&gt;&lt;a href="start.html"&gt;Start&lt;/a&gt;&lt;/li&gt; <br>
+        &lt;li&gt;&lt;a href="nowe.html"&gt;Aktualności&lt;/a&gt;&lt;/li&gt; <br>
+        &lt;li&gt;&lt;a href="szkolenia.html"&gt;Szkolenia&lt;/a&gt; <br>
+        &lt;ul&gt; <br>
+        &lt;li&gt;&lt;a href="kurs1.html"&gt;HTML&lt;/a&gt;&lt;/li&gt; <br>
+        &lt;li&gt;&lt;a href="kurs2.html"&gt;CSS&lt;/a&gt;&lt;/li&gt; <br>
+        &lt;li&gt;&lt;a href="kurs3.html"&gt;JavaScript&lt;/a&gt;&lt;/li&gt; <br>
+        &lt;/ul&gt; <br>
+        &lt;/li&gt; <br>
+        &lt;li&gt;&lt;a href="usługi.html"&gt;Usługi&lt;/a&gt;&lt;/li&gt; <br>
+        &lt;/ul&gt; </b><br></p>
+      <p> Po zdefiniowaniu zawartości menu można przystąpić do tworzenia menu zagnieżdżonego. Ponieważ zaproponowana lista ma podlistę tylko na drugiej pozycji, nasze menu będzie jedynie na tej właśnie pozycji.<br> Tak jak w przypadku menu pionowego i poziomego, w przygotowanym menu trzeba usunąć punktory oraz wyzerować marginesy,np.: <br> <b> ul, ul li {margin: 0; padding: 0;}<br> #blok li {list-style:none;}</b></p>
+      <p> W definicji stylów został zefiniowany indentyfikator #blok, który w treści dokumentu HTML został przypisany do znacznika listy &lt;ul&gt;.<br> NAstępnym etapem jest zdefiniowanie wyglądu menu.</p>
+      <p> Przykład: <br> <b> 
+        ul, ul li { <br>
+          margin: 0;  <br>
+          padding: 0; <br>
+        } <br> 
+        #blok li { <br>
+          list-style:none; <br>
+        } <br>
+        #blok, #blok ul { <br>
+          width: 140px; <br>
+        } <br>
+        #blok ul { <br>
+          position: absolute; <br>
+          top: 0; <br>
+          left: 160px; <br>
+          padding-left: 1px; <br>
+          visibility: hidden; <br>
+        } <br>
+        #blok li { <br>
+          padding-bottom: 1px; <br>
+          position: relative; <br> 
+        } <br>
+        #blok li:hover ul { <br>
+          visibility: visible; <br>
+          width: auto; <br> 
+          height: auto; <br> 
+        } <br>
+      #blok a, #block li:hover li a { <br>
+         display: block; <br>
+         font: 12px/30px verdana, sans-serif;
+         text-decoration: none; <br>
+         padding: 0 10px; <br>
+         width: 140px; <br>
+         background-color: red; <br>
+         color:black; <br>
+        } <br>
+      #block li:hover a, #block li:hover li:hover a { <br>
+        background-color: orange; <br>
+        color:white; <br>
+       } <br>
+      </b></p>
     </body>
 </html>
