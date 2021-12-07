@@ -1,0 +1,29 @@
+    body {
+    background-color:rgb(228, 228, 228);
+    }
+    b { 
+        color:rgb(24, 90, 24);
+    }
+    ul{
+        display: block;
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+    }
+    li a{
+        display: block; 
+        width: 100;
+    }
+    ul a:link, ul a:visited {
+       display: block;
+       width: 168px; 
+       background-color: rgb(255, 255, 255);
+       color:black;
+       padding: 4px;
+       border: 2px outset black;
+    }
+    ul a:hover{
+        border-style: inset;
+        color:rgb(119, 119, 119);
+        padding: 6px 3px 3px 6px;
+    }
