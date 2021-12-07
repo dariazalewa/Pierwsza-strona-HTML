@@ -27,5 +27,22 @@
         <p> <u>Menu pionowe</u> - aby utworzyć pionowe menu nawigacyjne, należy do podanych deklaracji do list dołączyć deklarację dotyczącą znacznika &lt;a&gt; występujące w zdefiniowanej liście oraz znacznika &lt;li&gt;.</p>
         <p> Przykład: <br> <b> li a {display: block; width: 100;}</b></p>
         <p> Atrybut display: block wyświetli linki jako elementy blokowe, a width:100 ustawi szerokość menu.</p>
+        <p> Utworzoną listę można za pomocą kaskadowych arkuszy stylów zmienić w atrakcyjne menu.<br> Przykład:</p>
+        <p><b> ul a:link, ul a:visited { <br>
+          display: block; <br>
+          width: 168px; <br>
+          background-color: rgb(255, 255, 255); <br>
+          color:black; <br>
+          padding: 4px; <br>
+          border: 2px outset black; <br>
+       } <br>
+       ul a:hover{ <br>
+           border-style: inset; <br>
+           color:rgb(119, 119, 119); <br>
+           padding: 6px 3px 3px 6px; <br>
+       }</b></p>
+       <p> W tej części definicji stylów został zdefiniowany wygląd przycisków menu.<br> Każdy z elementów zostanie wyświetlony w bloku, czyli inaczej mówiąc cały blok stanie się odnośnikiem.</p>
+       <p> Deklaracja a:link oraz a:visited określa wygląd przed określenie strony lub po jej odwiedzeniu.<br> A w drugiej części deklaracja a:hover określa wygląd przycisku, gdy znajdzie się na nim kursor myszy.</p>
+       
     </body>
 </html>
