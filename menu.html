@@ -24,11 +24,12 @@
         Zanim przystąpimy do definiowania menu, na pzrygotowanej liście trzeba usunąć punktory oraz wyzerować marginesy. Należy również zadeklarować wyświetlanie listy w bloku oraz określić szerokość tego bloku.</p>
         <p> Przykład: <br> <b> ul {display: block; list-style-type: none; margin: 0; padding: 0;}</b></p>
         <p> Tak zapisana deklaracja w arkuszu stylów jest podstawą do tworzenia pionowych i poziomych pasków nawigacyjnych.</p>
-        <p> <u>Menu pionowe</u> - aby utworzyć pionowe menu nawigacyjne, należy do podanych deklaracji do list dołączyć deklarację dotyczącą znacznika &lt;a&gt; występujące w zdefiniowanej liście oraz znacznika &lt;li&gt;.</p>
+        <center><h3>Menu pionowe</h3></center>
+        <p> Aby utworzyć pionowe menu nawigacyjne, należy do podanych deklaracji do list dołączyć deklarację dotyczącą znacznika &lt;a&gt; występujące w zdefiniowanej liście oraz znacznika &lt;li&gt;.</p>
         <p> Przykład: <br> <b> li a {display: block; width: 100;}</b></p>
         <p> Atrybut display: block wyświetli linki jako elementy blokowe, a width:100 ustawi szerokość menu.</p>
-        <p> Utworzoną listę można za pomocą kaskadowych arkuszy stylów zmienić w atrakcyjne menu.<br> Przykład:</p>
-        <p><b> ul a:link, ul a:visited { <br>
+        <p> Utworzoną listę można za pomocą kaskadowych arkuszy stylów zmienić w atrakcyjne menu.</p>
+        <p> Przykład: <br> <b> ul a:link, ul a:visited { <br>
           display: block; <br>
           width: 168px; <br>
           background-color: rgb(255, 255, 255); <br>
@@ -43,6 +44,110 @@
        }</b></p>
        <p> W tej części definicji stylów został zdefiniowany wygląd przycisków menu.<br> Każdy z elementów zostanie wyświetlony w bloku, czyli inaczej mówiąc cały blok stanie się odnośnikiem.</p>
        <p> Deklaracja a:link oraz a:visited określa wygląd przed określenie strony lub po jej odwiedzeniu.<br> A w drugiej części deklaracja a:hover określa wygląd przycisku, gdy znajdzie się na nim kursor myszy.</p>
-       
+       <center><h3>Menu poziome</h3></center>
+       <p> Przy tworzeniu menu poziomego również korzystamy ze zdefiniowanej wcześniej listy nieuporządkowanej.<br> Domyślnie lista jest tworzona w układzie pionowym. Ułożenie pozycji listy obok siebie można uzyskać na dwa sposoby:</p>
+       <p> · wyświetlając kolejne elementy listy w linii (atrybut display: inline;);</p>
+       <p> · ustawiając pływanie dla każdej pozycji listy (atrybut float).</p>
+       <p> <u>Wyświetlanie kolejnych elementów listy w linii</u> - wyświetlanie kolejnych elementów listy w linii zostało zrealizowane za pomocą atrybutu display: inline;.</p>
+       <p> Przykład: <br> <b> 
+        ul, ul li{ <br>
+          display: block; <br>
+          list-style: none; <br>
+          margin:0; <br>
+          padding: 0; <br>
+      } <br>
+      ul li{ <br>
+          display: inline; <br>
+          white-space: nowrap; <br>
+      } <br>
+      ul a:link, ul a:visited { <br>
+         text-decoration: none; <br>
+         background-color: red; <br>
+         color:black; <br>
+         padding: 4px; <br>
+         border: 2px outset black; <br>
+      } <br>
+      ul a:hover{ <br>
+          border-style: inset; <br>
+          color: yellow; <br>
+          padding: 6px 3px 3px 6px; <br>
+      } <br></b></p>
+      <p> Dodane polecenie white-space: nowrap; blokuje zawijanie tekstu w każdej pozycji menu.</p>
+      <p> <u>Float dla każdej pozycji listy</u> - wyświetlanie kolejnych elementów listy w linii zostało zrealizowane za pomocą atrybutu float.</p>
+      <p> Przykład: <br> <b> 
+      ul li{ <br>
+          display: inline; <br>
+          white-space: nowrap; <br>
+      } <br>
+      ul, li{ <br>
+        float: left; <br>
+    } <br>
+      ul a:link, ul a:visited { <br>
+         text-decoration: none; <br>
+         background-color: red; <br>
+         color:black; <br>
+         padding: 4px; <br>
+         border: 2px outset black; <br>
+      } <br>
+      ul a:hover{ <br>
+          border-style: inset; <br>
+          color: yellow; <br>
+          padding: 6px 3px 3px 6px; <br>
+      } <br></b></p>
+      <p> Wygląd menu można poprawić, umieszczając elementy w blokach. Jeżeli elementy zostaną umieszczone w bloku, będzie można zdefiniować dla nich stałą szerokość.</p>
+      <p> Przykład: <br> <b> 
+        ul, ul li{ <br>
+          display: block; <br>
+          list-style: none; <br>
+          margin:0; <br>
+          padding: 0; <br>
+      } <br>
+        ul li{ <br>
+         float: left; <br>
+         margin-right: 10px; <br>
+      } <br>
+        ul a:link, ul a:visited { <br>
+           display: block; <br>
+           position: relative; <br>
+           text-decoration: none; <br>
+           background-color: red; <br>
+           color:black; <br>
+           padding: 4px; <br>
+           border: 2px outset black; <br>
+      } <br>
+        ul a:hover{ <br>
+            border-style: inset; <br>
+            color: yellow; <br>
+            padding: 6px 3px 3px 6px; <br>
+      } <br></b></p>
+      <p> Dodatkowo można określić stałą szerokość bloków i wyśrodkowanie tekstu menu.</p>
+      <p> Przykład: <br> <b> 
+        ul, ul li{ <br>
+          display: block; <br>
+          list-style: none; <br>
+          margin:0; <br>
+          padding: 0; <br>
+      } <br>
+        ul li{ <br>
+         float: left; <br>
+         margin-right: 5px; <br>
+      } <br>
+        ul a:link, ul a:visited { <br>
+           display: block; <br>
+           width: 100px; <br>
+           text-align: center; <br>
+           position: relative; <br>
+           text-decoration: none; <br>
+           background-color: red; <br>
+           color:black; <br>
+           padding: 4px; <br>
+           border: 2px outset black; <br>
+      } <br>
+        ul a:hover{ <br>
+            border-style: inset; <br>
+            color: yellow; <br>
+            padding: 6px 3px 3px 6px; <br>
+      } <br></b></p>
+      <p> Umieszczanie elementów w blokach daje możliwość zdefiniowania jednakowej szerokości wszystkich pozycji menu oraz ustalenia odległości między pozycjami.<br> Trzeba również pamiętać o przypisaniu właściwości clear następnemu elementowi strony w celu uniknięcia „przyklejenia" tego elementu do menu.</p>
     </body>
 </html>
