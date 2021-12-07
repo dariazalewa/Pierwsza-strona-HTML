@@ -1,19 +1,32 @@
-    body {
+body {
     background-color:rgb(228, 228, 228);
     }
     b { 
         color:rgb(24, 90, 24);
     }
-    ul a:link, ul a:visited {
+    ul, ul li{
         display: block;
-        width: 168px;
-        background-color: rgb(255, 255, 255);
-        color:black;
-        padding: 4px;
-        border: 2px outset black;
-        }
-        ul a:hover{
+        list-style: none;
+        margin:0;
+        padding: 0;
+    }
+    ul li{
+        float:left;
+        margin-right: 10px;
+    }
+    ul a:link, ul a:visited {
+       display: block;
+       width: 100px; 
+       text-align: center;
+       position: relative;
+       text-decoration: none;
+       background-color: rgb(255, 255, 255);
+       color:black;
+       padding: 4px;
+       border: 2px outset black;
+    }
+    ul a:hover{
         border-style: inset;
-        color:rgb(119, 119, 119);
-        padding: 6px 3px 3px 6px;
-        }
+        color:rgb(65, 63, 63);
+        padding: 7px 4px 4px 7px;
+    }
