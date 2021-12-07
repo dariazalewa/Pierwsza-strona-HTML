@@ -4,29 +4,41 @@ body {
     b { 
         color:rgb(24, 90, 24);
     }
-    ul, ul li{
-        display: block;
-        list-style: none;
-        margin:0;
+    ul, ul li {
+        margin: 0;
         padding: 0;
-    }
-    ul li{
-        float:left;
-        margin-right: 10px;
-    }
-    ul a:link, ul a:visited {
-       display: block;
-       width: 100px; 
-       text-align: center;
-       position: relative;
-       text-decoration: none;
-       background-color: rgb(255, 255, 255);
-       color:black;
-       padding: 4px;
-       border: 2px outset black;
-    }
-    ul a:hover{
-        border-style: inset;
-        color:rgb(65, 63, 63);
-        padding: 7px 4px 4px 7px;
-    }
+        }
+        #blok li {
+        list-style:none;
+        }
+        #blok, #blok ul {
+        width: 140px;
+        }
+        #blok ul {
+        position: absolute;
+        top: 0;
+        left: 160px;
+        padding-left: 1px;
+        visibility: hidden;
+        }
+        #blok li {
+        padding-bottom: 1px;
+        position: relative;
+        }
+        #blok li:hover ul {
+        visibility: visible;
+        width: auto;
+        height: auto;
+        }
+        #blok a, #block li:hover li a {
+        display: block;
+        font: 12px/30px verdana, sans-serif; text-decoration: none;
+        padding: 0 10px;
+        width: 140px;
+        background-color: red;
+        color:black;
+        }
+        #block li:hover a, #block li:hover li:hover a {
+        background-color: orange;
+        color:white;
+        }
