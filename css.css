@@ -31,3 +31,11 @@ u {
 b { 
    color:rgb(24, 90, 24);
 }
+p#ak1 { 
+  font-size: 14pt; 
+  color:deeppink;
+}
+p#ak2 {
+  font-size: 16pt; 
+  color:darkturquoise;
+}
