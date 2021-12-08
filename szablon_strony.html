@@ -1,33 +1,49 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>D.Z.</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
-    <body>
-        <center><h2> HTML i CSS - Budowa strony internetowej - szablon strony internetowej w języku HTML5</h2></center>
-        <br>
-        <nav><B>Rozdziały: </B>
-            <li><a href="glowna.html"> Powrót do strony głównej </a></li>
-          </nav>
-          <br>
-          <p> Podstawowym elementem języka HTML jest znacznik. Znaczniki są to polecenia zamieszczone w nawiasach ostrokątnych. <br> Informują one w jaki sposób ma wyświtelić elementy na stronie internetowej. <br> Wyróżniamy znaczniki otwierające i zamykające. Znaczniki mają dodatkowe elementy zwane <B> atrybutami </B>, które uszczegóławiają działanie.</p>
-          &lt;znacznik&gt;  - otwierający <br>
-          : <br>
-          : <br>
-          &lt;/znacznik&gt;  - zamykający
-          <br>
-          <h4> Szablon strony:</h4>
-          <p> Dokument HTML zaczynamy od znacznika &lt;html&gt;. <br> Następno częścią jest nagłówek, czyli &lt;head&gt;. Tam zapisujemy, np. tytuł, klawiature z jakiej korzystamy,np. UTF-8 oraz tutaj zawieramy również style, czyli jaka czcionka ma być, jaki kolor tła itd. <br> Następnie jest sekcja &lt;body&gt; w której umieszczamy zawartość dokumentu, np. zdjęcia, tekst, tabelki, listy, itd.<br> I na końcu zamykamy dokument &lt;/html&gt;.</p>
-          &lt;html&gt;  <br>
-          &lt;head&gt; <br>
-          &lt;title&gt; ... &lt;/title&gt; <br>
-          &lt;/head&gt; <br>
-          &lt;body&gt; <br>
-          : <br>
-          : <br>
-          &lt;/body&gt;
-          &lt;/html&gt; 
-    </body>
+<head>
+<meta charset="UTF-8" />
+<title>D.Z.</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Budowa strony internetowej - szablon strony internetowej w języku HTML5</p>
+    <nav>
+    <ul>
+        <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
+    <p> Podstawowym elementem języka HTML jest znacznik. Znaczniki są to polecenia zamieszczone w nawiasach ostrokątnych. <br> Informują one w jaki sposób ma wyświtelić elementy na stronie internetowej. <br> Wyróżniamy znaczniki otwierające i zamykające. Znaczniki mają dodatkowe elementy zwane <B> atrybutami </B>, które uszczegóławiają działanie.</p>
+            &lt;znacznik&gt;  - otwierający <br>
+            : <br>
+            : <br>
+            &lt;/znacznik&gt;  - zamykający
+    </section>
+    <section class="kolumny" id="kol2">
+        <article class="art"><h4> Szablon strony</h4>
+        <p> Dokument HTML zaczynamy od znacznika &lt;html&gt;. <br> Następno częścią jest nagłówek, czyli &lt;head&gt;. Tam zapisujemy, np. tytuł, klawiature z jakiej korzystamy,np. UTF-8 oraz tutaj zawieramy również style, czyli jaka czcionka ma być, jaki kolor tła itd. <br> Następnie jest sekcja &lt;body&gt; w której umieszczamy zawartość dokumentu, np. zdjęcia, tekst, tabelki, listy, itd.<br> I na końcu zamykamy dokument &lt;/html&gt;.</p>
+        </section>
+        <section class="kolumny" id="kol3"><h4> Szablon:</h4>
+        <p>
+            &lt;html&gt;  <br>
+            &lt;head&gt; <br>
+            &lt;title&gt; <br>
+            . <br>
+            . <br>
+            . <br>
+            &lt;/title&gt; <br>
+            &lt;/head&gt; <br>
+            &lt;body&gt; <br>
+            : <br>
+            : <br>
+            &lt;/body&gt;
+            &lt;/html&gt; 
+    </p>
+    </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
 </html>

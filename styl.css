@@ -1,0 +1,13 @@
+* {margin: 0px; padding: 0px;}
+section {overflow: hidden; padding: 25px;}
+#ramka {width: 999px; margin-right: auto; margin-left: auto;}
+#naglowek {width: 100%; background-color: rgb(228, 228, 228); font-size: 12pt; color:rgb(8, 57, 85); font-family: Arial; font-style: italic; text-align: center; font-weight: bold;}
+#stopka {width: 100%; background-color: rgb(228, 228, 228); font-size: 12pt; color: rgb(8, 57, 85); font-family: Arial; font-style: italic; padding: 5px; text-align:center; clear:both;}
+.kolumny {margin-top: 10px; margin-right: 2%; margin-bottom: 2%; margin-left: 10px; background-color: rgb(148, 187, 187);}
+#kol1 {float: left; width: 180px;}
+#kol2 {float: left; width: 490px;}
+#kol3 {width: 100px;}
+ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: rgb(100, 111, 114);}
+li {float: left;}
+li a {display: block; color:white; text-align: center; padding: 14px 16px; text-decoration: none;}
+li a:hover {background-color: turquoise;}
