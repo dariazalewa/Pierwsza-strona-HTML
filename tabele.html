@@ -1,41 +1,52 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>D.Z.</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
-    <body>
-        <center><h2> HTML i CSS - Tabele</h2></center>
-        <br>
-        <nav><B>Rozdziały: </B>
-            <li><a href="glowna.html"> Powrót do strony głównej </a></li>
-          </nav>
-          <br>
-          <p>Kod, dzięki któremu powstanie nam tabela składa się w następujący sposób: <br> <br>
+<head>
+<meta charset="UTF-8" />
+<title>D.Z.</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Tabele</p>
+    <nav>
+    <ul>
+    <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
+        <p>Kod, dzięki któremu powstanie nam tabela składa się w następujący sposób: <br> <br>
             &lt;table&gt; <br> &lt;tr&gt; &lt;th&gt;...&lt;/th&gt; &lt;th&gt;...&lt;/th&gt;&lt;/tr&gt; <br> 
             &lt;tr&gt; &lt;td&gt;...&lt;/td&gt; &lt;td&gt;...&lt;/td&gt;&lt;/tr&gt; <br> 
             &lt;/table&gt; <br> <br>
-        <b>Znacznik &lt;table&gt;...&lt;table&gt; zaczyna tworzenie tabeli. <br> Znaczniki &lt;th&gt;...&lt;/th&gt; są nagłówkami tabeli. <br> 
-            Znaczniki &lt;tr&gt;...&lt;/tr&gt;to wiersze w tabeli. <br> Znaczniki &lt;td&gt;...&lt;/td&gt;to zwykłe komórki w tabeli.</b> <br>
- Przykład kodu: <br> <br>
- &lt;table&gt; <br> &lt;tr&gt; &lt;th&gt;Nazwiko&lt;/th&gt; &lt;th&gt;Imię&lt;/th&gt;&lt;/tr&gt; <br> 
+            <b>Znacznik &lt;table&gt;...&lt;table&gt; zaczyna tworzenie tabeli. <br> Znaczniki &lt;th&gt;...&lt;/th&gt; są nagłówkami tabeli. <br> 
+                Znaczniki &lt;tr&gt;...&lt;/tr&gt;to wiersze w tabeli. <br> Znaczniki &lt;td&gt;...&lt;/td&gt;to zwykłe komórki w tabeli.</b> </p>
+     </section>
+    <section class="kolumny" id="kol2">
+        <article class="art"><h4> Przykład kodu:</h4>
+            &lt;table&gt; <br> &lt;tr&gt; &lt;th&gt;Nazwiko&lt;/th&gt; &lt;th&gt;Imię&lt;/th&gt;&lt;/tr&gt; <br> 
             &lt;tr&gt; &lt;td&gt;Chmielewski&lt;/td&gt; &lt;td&gt;Jan&lt;/td&gt;&lt;/tr&gt; <br> 
             &lt;/table&gt; <br> <br> Rezultat: <br>
-</p>
-<table>
+        </p>
+        <table>
     <tr> <th>Nazwiko</th> <th>Imię</th></tr>
     <tr> <td>Chmielewski</td> <td>Jan</td></tr>
-    </table>
-    <br>
-    <p>Aby poprawnie wyświetlało nam tabelki w części &lt;style&gt; w nagłówku &lt;head&gt; lub oddzielnym pliku CSS możemy wpisać np.: <br> <br>
-        table, td, th { <br>
-            border: 1px solid rgb(165, 164, 164); <br>
-            border-collapse: collapse; <br>
-        } <br>
-        th, td{ <br>
-           padding: 5px; <br>
-           text-align: left; <br>
-        } </p>
-    </body>
+    </table> 
+        </article>
+        </section>
+        <section class="kolumny" id="kol3">
+            <p>Aby poprawnie wyświetlało nam tabelki w części &lt;style&gt; w nagłówku &lt;head&gt; lub oddzielnym pliku CSS możemy wpisać np.: <br> <br>
+                table, td, th { <br>
+                    border: 1px solid rgb(165, 164, 164); <br>
+                    border-collapse: collapse; <br>
+                } <br>
+                th, td{ <br>
+                   padding: 5px; <br>
+                   text-align: left; <br>
+                } </p>  
+      </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
 </html>
