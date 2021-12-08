@@ -39,3 +39,11 @@ p#ak2 {
   font-size: 16pt; 
   color:darkturquoise;
 }
+p.t1 {
+  font-size: 14pt; 
+  color:hotpink;
+}
+p.t2 {
+  font-size: 16pt; 
+  color:fuchsia;
+}
