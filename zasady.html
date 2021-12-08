@@ -13,5 +13,9 @@
           </nav>
           <br>
           <center><h3>Definiowani reguł</h3></center>
+          <p> Reguły definiowanoia w arkuszu CSS dla znacznika dotyczą wszystkich użytych w dokumencie znaczników tego typu. Oznacza to, że jeżeli zdefiniujemy w arkuszu stylów wygląd znacznika &lt;span&gt;, to w każdym miejscu na stronie tekst otoczony znacznikiem &lt;span&gt; będzie wyglądał tak samo, niezależnie od tego, czy znajdzie się w nagłówku strony, w treści dokumentu, czy w menu.<br> Przykład: <br> <b> span {font-size: 14pt; color: blue; font-weight: normal;}</b></p>
+          <p> Aby odróżnić przy formatowaniu podobne elementy umieszczane w różnych miejscach dokumentu, możemy zastosować jedną z trzech technik:<br>a) reguły kontekstowe,<br>b)indentyfikatory,<br>c)klasy.</p>
+          <p> <u>a) Reguły kontekstowe</u> - pozwalają na zdefiniowanie w arkuszu stylów wyglądu każdego elementu w zależności od jego położenia.<br> Przykład:<br><b> h2 span {font-size: 14pt; color: blue; font-weight: normal;} <br> p span {font-size: 14pt; color: red; font-weight: normal;}</b></p>
+          <p> W podanym przykładzie znacznik &lt;span&gt; został zdefiniowany w kontekście nagłówka &lt;h2&gt; oraz akapitu &lt;p&gt;. Efekt jest taki, że każdy fragment otoczony znacznikiem &lt;span&gt; wygląda inaczej.</p>
     </body>
 </html>
