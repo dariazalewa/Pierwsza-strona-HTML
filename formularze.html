@@ -1,17 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>D.Z.</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
-    <body>
-        <center><h2> HTML i CSS - Formularze</h2></center>
-        <br>
-        <nav><B>Rozdziały: </B>
-            <li><a href="glowna.html"> Powrót do strony głównej</a></li>
-        </nav>
-        <br>
+<head>
+<meta charset="UTF-8" />
+<title>D.Z.</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Formularze</p>
+    <nav>
+    <ul>
+    <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
         <p>Każdy formularz zaczyna się od znacznika otwierającego &lt;form&gt; i zamykającego &lt;/form&gt;. Podstawowe elementy formularza to pole tekstowe i listy oraz przycisk powodujący wysłanie danych. 
             Przykładowy wygląd kodu to np.: <br> <br>
             &lt;form action="mailto:dom@gm.com" method="post"&gt; <br>
@@ -33,7 +37,8 @@
             <input type="submit" value="Wyślij">
         </form> <br>
         <p> Jak widać tutaj wpisujemy w formularzu swój adres email. </p>
-        <br>
+        </section>
+        <section class="kolumny" id="kol2">
        <b><p>Znacznik &lt;input&gt; ma następujące atrybuty: <br></p> </b>
         <table>
             <tr><th>name</th><th> Określa nazwę danego pola oraz nazwę zmiennej, <br> do której zostanie podstawiona wprowadzona wartość. <br> Każde pole powinno posiadać ten atrybut, <br> ale jego wartość powinna być różna dla wszstkich pól formularza.</th></tr>
@@ -54,55 +59,8 @@
             <tr><th>type="reset"</th><th> przycisk</th></tr>
             <tr><th>type="hidden"</th><th> pole niewidoczne na stronie</th></tr>
             <tr><th>type="button"</th><th> przycisk dowolnego przeznaczenia</th></tr>
-        </table>
-        <br>
-         <p> Przykłady związane z folmularzami: <br> <b>1. Z atrybutem type="checkbox". </b> Służy ona do zaznaczania opcji wyboru(można zaznaczyć lub usunąć zaznaczenie): <br>
-            a) <br> <br> &lt;form action="mailto" method="post"&gt; <br>
-            &lt;h4&gt;formularz ważny&lt;/h4&gt; <br>
-            &lt;p&gt;Podaj swoje imię i nazwisko:&lt;/p&gt; <br>
-            &lt;input type="text" name="nazwisko" value="" size="40"&gt; <br>
-            &lt;input type="submit" name="opcje"&gt;&lt;/p&gt; <br>
-            &lt;p&gt;&lt;input type="checkbox" name="opcje"&gt; <br>
-          Zgadam się na przetwarzanie moich danych osobowych&lt;/p&gt; <br>
-            &lt;/form&gt; <br> <br> 
-         Rezultat: <br> </p>
-         <form action="mailto" method="post">
-            <h4>Formularz ważny</h4>
-            <p>Podaj swoje imię i nazwisko:</p>
-            <input type="text" name="nazwisko" value="" size="40">
-            <input type="submit" name="opcje"></p>
-            <p><input type="checkbox" name="opcje">
-            Zgadam się na przetwarzanie moich danych osobowych</p>
-        </form> <br>
-        <p>b) Z tym atrybutem spotkamy się również w formularzach, gdzie możemy wybrać kilka opcji na raz: <br>
-            &lt;form&gt; <br>
-            &lt;b&gt;Podaj swoje hobby:&lt;/b&gt;&lt;br&gt;&lt;hr&gt;  <br>
-            &lt;input type="checkbox" name="hobby" value="muzyka" &gt; muzyka &lt;br&gt;  <br>
-            &lt;input type="checkbox" name="hobby" value="film" &gt; film &lt;br&gt;   <br>
-            &lt;input type="checkbox" name="hobby" value="komputer" &gt; komputer &lt;br&gt;  <br>
-            &lt;/form&gt; <br> <br> Rezulatat: <br></p>
-            <form>
-                <b>Podaj swoje hobby:</b><br><hr>
-                <input type="checkbox" name="hobby" value="muzyka" > muzyka <br>
-                <input type="checkbox" name="hobby" value="film" > film <br>
-                <input type="checkbox" name="hobby" value="komputer" > komputer <br>
-            </form>
-            <br>
-            <p><b>2. Z atrybutem type="radio".</b> Ona również służydo zaznaczania opcji wyboru, lecz w tym przypadku można zaznaczyć tylko jedną opcję: <br> <br>
-                &lt;form&gt; <br>
-                    &lt;b&gt;Podaj wykształcenie:&lt;/b&gt;&lt;br&gt; <br>
-                    &lt;input type="radio" name="wykszt" value="podstawowe" &gt; podstawowe&lt;br&gt; <br>
-                    &lt;input type="radio" name="wykszt" value="średnie" &gt; średnie &lt;br&gt; <br>
-                    &lt;input type="radio" name="wykszt" value="wyższe" &gt; wyższe &lt;br&gt; <br>
-                    &lt;/form&gt; <br> <br> Rezultat: <br>
-            </p> 
-            <form>
-                <b>Podaj wykształcenie:</b><br>
-                <input type="radio" name="wykszt" value="podstawowe" > podstawowe <br>
-                <input type="radio" name="wykszt" value="średnie" > średnie <br>
-                <input type="radio" name="wykszt" value="wyższe" > wyższe <br>
-            </form>
-            <p>Istnieją tutaj również etykiety. Znacznik <b>&lt;label&gt;</b>, który łączy tekst etykiety z polem, którego dotyczy opis.</p>
+        </table> 
+        <p>Istnieją tutaj również etykiety. Znacznik <b>&lt;label&gt;</b>, który łączy tekst etykiety z polem, którego dotyczy opis.</p>
         <p>Jeżeli projektowany przez na sformularz zawiera dużo powiązanych ze sobą elementów, to może wykonać tzw. grupowanie elementów formularza. <br>
         Służy do tego znacznik <b>&lt;fieldset&gt;</b>. Znajduje się lub bardziej powinnien się znajdować za znacznikiem <b>&lt;form&gt;</b>, ale przed znacznikami definiującymi poszczególne elementy. <br>
         Stosując znacznik <b>&lt;legend&gt;</b> można dodać tytył pogrupowanym elementom. <br> Przykład: <br> <br>
@@ -135,66 +93,71 @@
        <input type="submit" value="Wyślij" > &nbsp; &nbsp;
        <input type="reset" value="Wyczyść" >
     </form>
-    <p>Pole <b>SELECT</b> służy do wyświetlania w formularu listy wartości. Jest defifionawa przy użyciu znacznika <b>&lt;select&gt;</b>, który definiuje listę, <br> a wewnątrz niego mogą występować znaczniki <b>&lt;option&gt;</b>, które definiują poszczególne wartości tej listy. </p> <br>
-     <p>Dla znacznika  <b>&lt;select&gt;</b> można użyć atrybutów:</p>  <br>
-     <table>
-        <tr><th>size="n"</th><th> n określa liczbę pozycji widocznych w polu SELECT. <br>Jeśli nie podamy liczby, będzie on pokazywał size="0".</th></tr>
-        <tr><th>multiple</th><th> Można zaznaczyć więcej niż jedną opcję na liście.</th></tr>
-    </table> 
-    <br>
-    <p>Dla znacznika <b>&lt;option&gt;</b> można użyć atrybutów:</p> <br>
-    <table>
-        <tr><th>selected</th><th> Pozycja, dla której został zdefiniowany atrybut, <br> będzie automatycznie zaznaczony na tej liście.</th></tr>
-        <tr><th>value="wartość"</th><th> określa wartość danej pozycji przekazywą przez wysłany formularz.</th></tr>
-    </table>
-    <br>
-    <p>   Przykład użycia pola SELECT: <br> <br>
-        &lt;form&gt; <br>
-        &lt;b&gt;Podaj wiek:&lt;/b&gt; <br>
-        &lt;select name="wiek"&gt; <br>
-        &lt;option&gt;&lt; 20&lt;/option&gt; <br>
-        &lt;option&gt;20-100&lt;/option&gt; <br>
-        &lt;option&gt;&gt; 100&lt;/option&gt; <br>
-        &lt;/select&gt;
-        &lt;/form&gt; <br> <br> Rezultat: <br></p>
-    <form>
-        <b>Podaj wiek:</b>
-        <select name="wiek">
-            <option>&lt; 20</option>
-            <option>20-100</option>
-            <option>&gt; 100</option>
-        </select>
-    </form>
-    <br>
-    <p>Pole <b>TEXTAREA</b> służy do wprowadzania w formularzu większej ilości tekstu. <br> Definiujemy go za pomocą znacznika <b>&lt;textarea&gt;</b>. Znacznik może przyjmować atrybuty:,</p>
-    <table>
-        <tr><th>name="nazwa"</th><th> Nazwa przypisana do pola.</th></tr>
-        <tr><th>rows="n"</th><th> Liczba wierszy w polu tekstowym.</th></tr>
-        <tr><th>cols="n"</th><th> Liczba kolumn (znaków) w polu tekstowym.</th></tr>
-    </table> <br>
-    <p> Przykładowe użycie pola TEXTAREA: <br> <br>
-        &lt;form&gt; &lt;br&gt; <br>
-            Opisz siebie... &lt;br&gt; <br>
-            &lt;textarea name="nazwa" cols="20" rows="4"&gt;> <br>
-                Maksymalnie 250 znaków <br>
-                &lt;/textarea&gt; <br>
-                &lt;/form&gt; <br> <br> Rezultat: <br> </p>
-    <form>
-        Opisz siebie... <br>
-        <textarea name="nazwa" cols="20" rows="4">
-            Maksymalnie 250 znaków
-        </textarea>
-    </form> <br>
-    <p>Pole <b>BUTTON</b> służy do tworzenia w formularzu przycisków i jest definiowane za pomocą znacznika <b>&lt;button&gt;</b>. Ma podobne działanie jak znacznik <b>&lt;input&gt;</b>. A działa tak: <br> <br>
-        &lt;button type="submit" name="przycisk1"&gt;Wyślij&lt;/button&gt; <br>
-        &lt;button type="reset" name="przycisk2"&gt;Usuń&lt;/button&gt;  <br>
-        &lt;button type="button" name="przycisk3"&gt;Powrót&lt;/button&gt;  <br> <br> Rezultat: <br>
-</p>
-    <button type="submit" name="przycisk1">Wyślij</button> 
-    <button type="reset" name="przycisk2">Usuń</button>
-    <button type="button" name="przycisk3">Powrót</button>
-    <br>
-    <p> Pole <b>DATALIST</b> moze służyć jako element autouzupełniania wartości wprowadzanychw znaczniku <b>&lt;input&gt;</b>(znacznik datalist występuje po nim). <br> Za pomocą znacznika <b>&lt;datalist&gt;</b> można zdefiniować predefiniowaną listę wartości. <br> 
-    Wewnątrz znacznika &lt;datalist&gt; muszą wystąpić znaczniki  &lt;option&gt;. <br> </p>
-    </body>
+    <p>Dla znacznika  <b>&lt;select&gt;</b> można użyć atrybutów:</p>  <br>
+        <table>
+           <tr><th>size="n"</th><th> n określa liczbę pozycji widocznych w polu SELECT. <br>Jeśli nie podamy liczby, będzie on pokazywał size="0".</th></tr>
+           <tr><th>multiple</th><th> Można zaznaczyć więcej niż jedną opcję na liście.</th></tr>
+       </table> 
+       <br>
+       <p>Dla znacznika <b>&lt;option&gt;</b> można użyć atrybutów:</p> <br>
+       <table>
+           <tr><th>selected</th><th> Pozycja, dla której został zdefiniowany atrybut, <br> będzie automatycznie zaznaczony na tej liście.</th></tr>
+           <tr><th>value="wartość"</th><th> określa wartość danej pozycji przekazywą przez wysłany formularz.</th></tr>
+       </table>
+       <br>
+       <p>Pole <b>SELECT</b> służy do wyświetlania w formularu listy wartości. Jest defifionawa przy użyciu znacznika <b>&lt;select&gt;</b>, który definiuje listę, <br> a wewnątrz niego mogą występować znaczniki <b>&lt;option&gt;</b>, które definiują poszczególne wartości tej listy. </p> <br>
+        <p>   Przykład użycia pola SELECT: <br> <br>
+           &lt;form&gt; <br>
+           &lt;b&gt;Podaj wiek:&lt;/b&gt; <br>
+           &lt;select name="wiek"&gt; <br>
+           &lt;option&gt;&lt; 20&lt;/option&gt; <br>
+           &lt;option&gt;20-100&lt;/option&gt; <br>
+           &lt;option&gt;&gt; 100&lt;/option&gt; <br>
+           &lt;/select&gt;
+           &lt;/form&gt; <br> <br> Rezultat: <br></p>
+       <form>
+           <b>Podaj wiek:</b>
+           <select name="wiek">
+               <option>&lt; 20</option>
+               <option>20-100</option>
+               <option>&gt; 100</option>
+           </select>
+       </form>
+       <br>
+       <p>Pole <b>TEXTAREA</b> służy do wprowadzania w formularzu większej ilości tekstu. <br> Definiujemy go za pomocą znacznika <b>&lt;textarea&gt;</b>. Znacznik może przyjmować atrybuty:,</p>
+       <table>
+           <tr><th>name="nazwa"</th><th> Nazwa przypisana do pola.</th></tr>
+           <tr><th>rows="n"</th><th> Liczba wierszy w polu tekstowym.</th></tr>
+           <tr><th>cols="n"</th><th> Liczba kolumn (znaków) w polu tekstowym.</th></tr>
+       </table> <br>
+       <p> Przykładowe użycie pola TEXTAREA: <br> <br>
+           &lt;form&gt; &lt;br&gt; <br>
+               Opisz siebie... &lt;br&gt; <br>
+               &lt;textarea name="nazwa" cols="20" rows="4"&gt;> <br>
+                   Maksymalnie 250 znaków <br>
+                   &lt;/textarea&gt; <br>
+                   &lt;/form&gt; <br> <br> Rezultat: <br> </p>
+       <form>
+           Opisz siebie... <br>
+           <textarea name="nazwa" cols="20" rows="4">
+               Maksymalnie 250 znaków
+           </textarea>
+       </form> 
+    </section>
+    <section class="kolumny" id="kol3">
+        <p>Pole <b>BUTTON</b> służy do tworzenia w formularzu przycisków i jest definiowane za pomocą znacznika <b>&lt;button&gt;</b>. Ma podobne działanie jak znacznik <b>&lt;input&gt;</b>. A działa tak: <br> <br>
+           &lt;button type="submit" name="przycisk1"&gt;Wyślij&lt;/button&gt; <br>
+           &lt;button type="reset" name="przycisk2"&gt;Usuń&lt;/button&gt;  <br>
+           &lt;button type="button" name="przycisk3"&gt;Powrót&lt;/button&gt;  <br> <br> Rezultat: <br>
+   </p>
+       <button type="submit" name="przycisk1">Wyślij</button> 
+       <button type="reset" name="przycisk2">Usuń</button>
+       <button type="button" name="przycisk3">Powrót</button>
+       <br>
+       <p> Pole <b>DATALIST</b> moze służyć jako element autouzupełniania wartości wprowadzanychw znaczniku <b>&lt;input&gt;</b>(znacznik datalist występuje po nim). <br> Za pomocą znacznika <b>&lt;datalist&gt;</b> można zdefiniować predefiniowaną listę wartości. <br> 
+       Wewnątrz znacznika &lt;datalist&gt; muszą wystąpić znaczniki  &lt;option&gt;. <br> </p>
+    </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
 </html>

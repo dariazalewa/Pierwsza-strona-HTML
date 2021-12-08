@@ -11,5 +11,5 @@ ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-c
 li {float: left;}
 li a {display: block; color:white; text-align: center; padding: 14px 16px; text-decoration: none;}
 li a:hover {background-color: turquoise;}
-table, td, th {border: 1px solid rgb(255, 255, 255); border-collapse: collapse;}
+table, td, th {border: 1px solid rgb(164, 164, 165); border-collapse: collapse;}
 th, td{padding: 5px; text-align: left;}
