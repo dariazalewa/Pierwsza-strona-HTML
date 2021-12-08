@@ -1,19 +1,25 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>D.Z.</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
-    <body>
-        <center><h2> HTML i CSS - Odsyłacze (hiperłącza)</h2></center>
-        <br>
-        <nav><B>Rozdziały: </B>
-            <li><a href="glowna.html"> Powrót do strony głównej </a></li>
-          </nav>
-          <br>
-         <p>Często na stronach internetowych mamy odsyłacze(hiperłącza) np. do innych stron, aplikacji, usług.Prowadzą one nas do innych stron lub dowolnych elementów bieżącej witryny. <br> Definiowany odsyłacz ma postać : <br> <br> <b> &lt;a href="adres URL"&gt; Tekst połączenia &lt;/a&gt; </b> <br> <br>
-        Przykłady odsyłaczy: </p>
+<head>
+<meta charset="UTF-8" />
+<title>D.Z.</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Odsyłacze (hiperłącza)</p>
+    <nav>
+    <ul>
+    <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
+        <p>Często na stronach internetowych mamy odsyłacze(hiperłącza) np. do innych stron, aplikacji, usług.Prowadzą one nas do innych stron lub dowolnych elementów bieżącej witryny. <br> Definiowany odsyłacz ma postać : <br> <br> <b> &lt;a href="adres URL"&gt; Tekst połączenia &lt;/a&gt;</b> <br> </p>
+    </section>
+    <section class="kolumny" id="kol2">
+        <p> Przykłady odsyłaczy: </p>
         <table>
             <tr><th>Do innych dokumentów</th><th>&lt;a href="plik.html"&gt; Dokument &lt;/a&gt;</th></tr>
             <tr><th>Do pliku z grafiką</th><th>&lt;a href="grafika.jpg"&gt; Rysunek &lt;/a&gt;</th></tr>
@@ -33,10 +39,15 @@
                <b>&lt;a href="https://www.youtube.com/watch?v=-lfHXKbsMLE/"&gt; &lt;img src="hyperlink.jpg" style="width:300px; height:200px;" alt="wyświetlenie"&gt; &lt;/a&gt;</b> <br> <br>
            Rezultat: <br> </p>
             <a href="https://www.youtube.com/watch?v=-lfHXKbsMLE/"> <img src="hyperlink.jpg" style="width:300px; height:200px;" alt="wyświetlenie"> </a>
-            <p> W większości przeglądarek internetowych mozemy wyświetlić tekst, grafikę zapisaną w formacie <b>.gif, .jpg czy .png</b>. <br>
+    </section>
+    <section class="kolumny" id="kol3">
+        <p> W większości przeglądarek internetowych mozemy wyświetlić tekst, grafikę zapisaną w formacie <b>.gif, .jpg czy .png</b>. <br>
             Możemy również zapisać pliki zawierające pliki video, dźwięk, animacje z rozszerzeniami <b>.avi, .mp3, .mp4</b>. <br>
             Jedną z form zapisania takich plików jest zdefiniowanie odsyłacza do tych plików, np. plików muzycznych lub film. <br>
            <br>Aby zamieścić na stronie internetowej film możemy również użyć znacznika video: <br> <br>
             <b> &lt;canvas id="..." width"200" height"200"&gt;...&lt;/canvas&gt;</b> <br> <br> </p>
-    </body>
+    </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
 </html>
