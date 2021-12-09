@@ -1,29 +1,31 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>D.Z.</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
-    <body>
-        <center><h2> HTML i CSS - Menu w języku CSS</h2></center>
-        <br>
-        <nav><B>Rozdziały: </B>
-            <li><a href="glowna.html"> Powrót do strony głównej </a></li>
-          </nav>
-          <br>
-        <p> Zaprojaktowane na stronie internetowej menu umożliwia nawigację w jej obrębie.</p>
+<head>
+<meta charset="UTF-8" />
+<title>Daria Zalewa</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Menu w języku CSS</p>
+    <nav>
+    <ul>
+    <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
+        <p> Zaprojektowane na stronie internetowej menu umożliwia nawigację w jej obrębie.</p>
         <p> <u> Lista menu</u> - budowanie listy zaczynamy od utworzenia listy w języku HTML. <br> Lista ta powinna zawierać linki do odpowiednich miejsc wywoływanych przez menu.</p>
         <p> Przykład: <br> <b>
             &lt;ul&gt; <br> 
             &lt;li&gt;&lt;a href="start.html"&gt;Start&lt;/a&gt;&lt;/li&gt; <br>
-            &lt;li&gt;&lt;a href="nowe.html"&gt;Aktualności&lt;/a&gt;&lt;/li&gt; <br>
+            &lt;li&gt;&lt;a href="nowe.html"&gt;Nowe&lt;/a&gt;&lt;/li&gt; <br>
             &lt;li&gt;&lt;a href="usługi.html"&gt;Usługi&lt;/a&gt;&lt;/li&gt; <br>
             &lt;/ul&gt; </b><br></p>
-        <p> Po stworzeniu listy, dobrym rozwiązaniem jest zdefiniowanie dla znacznika &lt;ul&gt; indentyfikatora lub klasy, aby w wyniuku formatowania tworzonego menu nie doprowadzić do przeformatowania zwykłych list, które mogą znaleźć się na stronie. Pozwoli to również na umieszczanie na stronie kilku różnie wyglądających zestawów menu. <br> 
-        Zanim przystąpimy do definiowania menu, na pzrygotowanej liście trzeba usunąć punktory oraz wyzerować marginesy. Należy również zadeklarować wyświetlanie listy w bloku oraz określić szerokość tego bloku.</p>
-        <p> Przykład: <br> <b> ul {display: block; list-style-type: none; margin: 0; padding: 0;}</b></p>
-        <p> Tak zapisana deklaracja w arkuszu stylów jest podstawą do tworzenia pionowych i poziomych pasków nawigacyjnych.</p>
+    </section>
+    <section class="kolumny" id="kol2">
         <center><h3>Menu pionowe</h3></center>
         <p> Aby utworzyć pionowe menu nawigacyjne, należy do podanych deklaracji do list dołączyć deklarację dotyczącą znacznika &lt;a&gt; występujące w zdefiniowanej liście oraz znacznika &lt;li&gt;.</p>
         <p> Przykład: <br> <b> li a {display: block; width: 100;}</b></p>
@@ -207,5 +209,14 @@
         color:white; <br>
        } <br>
       </b></p>
-    </body>
+    </section>
+    <section class="kolumny" id="kol3">
+        <p> Po stworzeniu listy, dobrym rozwiązaniem jest zdefiniowanie dla znacznika &lt;ul&gt; indentyfikatora lub klasy, aby w wyniuku formatowania tworzonego menu nie doprowadzić do przeformatowania zwykłych list, które mogą znaleźć się na stronie. Pozwoli to również na umieszczanie na stronie kilku różnie wyglądających zestawów menu. <br> 
+            Zanim przystąpimy do definiowania menu, na pzrygotowanej liście trzeba usunąć punktory oraz wyzerować marginesy. Należy również zadeklarować wyświetlanie listy w bloku oraz określić szerokość tego bloku.</p>
+            <p> Przykład: <br> <b> ul {display: block; list-style-type: none; margin: 0; padding: 0;}</b></p>
+            <p> Tak zapisana deklaracja w arkuszu stylów jest podstawą do tworzenia pionowych i poziomych pasków nawigacyjnych.</p>
+    </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
 </html>
