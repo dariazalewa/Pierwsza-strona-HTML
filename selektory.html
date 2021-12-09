@@ -1,88 +1,96 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>D.Z.</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
-    <body>
-        <center><h2> HTML i CSS - Selektory</h2></center>
-        <br>
-        <nav><B>Rozdziały: </B>
-            <li><a href="glowna.html"> Powrót do strony głównej </a></li>
-          </nav>
-          <br>
-          <p> W języku HTML często występuje zagnieżdżanie jednego elementu wewnątrz drugiego. <br> Jeżeli dla elementu nadrzędnego w arkuszach stylów zostały zdefiniowane właściwości, <br>to w większości przypadków elementowi podrzędnemu zostaną pzrypisane te same właściwości. <br> Taki mechanizm nazywamy dziedziczeniem.</p>
-          <center><h3> Selektory</h3></center>
-          <p> Selektorem może być dowolny element języka HTML, dla którego chcemy zdefiniować parametry formatowania. <br> Rodzaje selektorów: <br></p>
-          <ol TYPE="1">
-            <li>Selektory elementów </li>
-            <li>Selektory atrybutów </li>
-            <li>Selektory specjalne </li>
-            <li>Selektory pseudoklas </li>
-            <li>Selektory pseudoelementów </li>
-            </ol>
-            <p> 1. Selektory elementów - selektory elementów wybierają elementy na podstawie ich nazwy. <br>Składnia dla selektorów elementów to podana już podstawowa składnia języka CSS: <br> <b>selektor {właściwość: wartość;}</b></p>
-            <p>a) Selektor typu elementu - podstawowy typ selektora. Służy do definiowania formatowania znaczników występujących na stronie,np. p, h3, table, img: <br> <b>p {color: blue; font-size: 4pt;}</b></p>
-            <p>b) Selektor uniwersalny - inaczej ogólny to selektor pasujący do wszystkich znaczników. Jest oznaczany gwiazdką *.<br> Składnia tego selektora: <br> <b>* {właściwość:wartość;}</b> <br> <br> Zamiast grupować elementy,np.: <br> <b>p, h1, h3, table {font-family:courier new; color:red;}</b> <br> można użyć tego selektora i tej gwiazdki: <br> <b>* {font-family:courier new; color:red;}</b></p>
-            <p>c) Selektor potomka - przy użyciu tego slektora można formatować elementy, które są zawarte wewnątrz innych znaczników: <br> <b> selektor selektor{ właściwość: wartość;}</b> <br> <br> Jeśli wewnątrz znacznika <b>&lt;div&gt;</b> zostanie umieszczony znacznik <b>&lt;span&gt;</b> to definicja będzie wyglądać następująco: <br> <b>div span {font-size:12pt; color:pink;}</b> </p>
-            <p>d) Selektor dziecka - służy do definiowania formatowania elementów, które znajdują się o jeden rząd niżej w hierarchi drzewa dokumentu. <br> Składnia tego selektora: <br> <b>rodzic &gt; dziecko {właściwość:wartość;}</b> <br> <br> Symbol &gt; oznacza bezpośredni związek między elementami. Wygląd przykładowej selekcji dziecka: <br> <b>div&gt;span {font-size:12pt; color:pink;}</b></p>
-            <p>e)Selektor sąsiadującego brata - umożliwia on nadanie drugiemu z sąsiadujących elementów zdefiniowanych atrybutów formatowania. Postać selektora: <br> <b> brat1 + brat2 {właściowość: wartość;}</b> <br><br> Przykładowe użycie selektora sąsiadujących braci: <br><b>div + span {font-size:12pt; color:pink;}</b> </p>
-            <p>f) Selektor braci - umożliwia nadanie drugiemu i wszystkim następnym sąsiadującym elementom zdefiniowanych atrybutów formatowania. Postać selektora: <br> <b>brat1 ~ brat2 {właściowość: wartość;} </b><br><br> Przykładowe użycie selektora braci:<br> <b>div ~ span {font-size:12pt; color:pink;}</b></p>
-            <p>2. Selektory atrybutów - w języku CSS można formatować znaczniki na podstawie atrybutów, <br> które one mają (czyli w skrócie możemy sformatować znaczniki na danych atrybutów). <br> Postać selektora atrybutów: <br> <b>selektor[atrybut="wartość atrybutu"] {właściwość: wartość}</b><br>Przykład:<br><b> p[id="rozowy"] {font-size:12pt; color:pink;}</b></p>
-            <p>a) Prosty selektor atrybutu - jest on wykorzystywany dla elementów, którym został określony atrybut, ale jego wartość nie ma znaczenia: <br> <b>selektor[atrybut] {właściwość: wartość;}</b> <br> lub <br> <b>[atrybut] {właściwość: wartość;}</b> <br> <br> Przykładowe użycie: <br> <b>p[id] {font-size:12pt; color:pink;}</b></p>
-            <p>b) Selektor atrybutu o określonej wartości - ten rodzaj selektora określa formatowanie, gdy atrybut ma określoną wartość: <br> <b>selektor[atrybut="wartość"] {właściwość: wartość;}</b> <br> lub <br> <b>[atrybut="wartość"] {właściwość: wartość;}</b> <br><br> Przykład: <br> w sekcji head: <br> <b>p[id="center"] {font-size:12pt; color:pink;}</b> <br> w sekcji body: <br> <b>&lt;p id="center"&gt;ok&lt;/p&gt; </b></p>
-            <p>c) Selektor atrybutu zawierający określony wyraz - ten atrybut może zostać wykorzystany, gdy wartość atrybutu składa się z kilku wyrazów. <br> Wystarczy, że w wartości atrybutu wystąpi podany wyraz, aby dany element został odpowiednio sformatowany. <br> Postać selektora: <br> <b>selektor[atrybut~="wyraz"] {właściwość: wartość;}</b> <br> lub <br> <b>[atrybut~="wyraz"] {właściwość: wartość;}</b> <br><br> Przykład: <br> w sekcji head: <br> <b>p[title~="jest"] {font-size:12pt; color:pink;}</b> <br> w sekcji body: <br> <b>&lt;p title="mój styl"&gt;okej&lt;/p&gt;</b></p>
-            <p>3. Selektory specjalne</p>
-            <p>a) Selektor klasy - pozwala on na nadanie określonych atrybutów takim samym elementom występującym na stronie. <br> Dlatego jeśli chcemy, to dzięki selektorowi klas możemy dla każdej grupy utworzyć klasę o dowolnej nazwie i zdefiniować dla niej styl. <br> Postać selektora klasy: <br> <b>selektor.nazwa_klasy {właściwość: wartość;}</b><br><br> Nazwa klasy to pojedynczy wyraz, który musi spełniać kilka warunków:</p>
-            <table>
-                <tr><th>1</th><th> Musi zaczynać się od kropki.</th></tr>
-                <tr><th>2</th><th> Mogą być użyte litery, cyfry, znak podkreślenia, łącznik.</th></tr>
-                <tr><th>3</th><th> Po kropce musi zostać wpisana litera.</th></tr>
-                <tr><th>4</th><th> Rozróżniane są małe i wielkie litery.</th></tr>
-                <tr><th>5</th><th> Stosowanie polskich znaków nie jest zalecane.</th></tr>
-                <tr><th>6</th><th> Nie może zawierać spacji.</th></tr>
-            </table>
-            <p>Przykład selektra klasy: <br> <b>p.tekst1 {font-size:12pt; color:pink;} <br>p.tekst2 {font-size:14pt; color:red;} <br> p.tekst3 {font-size:16pt; color:orange; font-family: courier;} </b></p>
-            <p>Odwołanie do klasy w dokumencie HTML ma postać: <br> <b>&lt;znacznik class="nazwa_klasy"&gt;...&lt;/znacznik&gt;</b><br><br> Tutaj nazwa klasy jest wartością atrybutu class. W nazwie klasy podawanej jako wartość atrybutu nie wstawia się kropki.</p>
-            <p>b) Uniwersalny selektor klasy - ta zdefiniowana klasa moż ezotsać użyta do sformatowania dowolnego elementu bez względu na typ znacznika: <br> <b>.nazwa_klasy {właściwość: wartość;}</b></p>
-            <p>Przykład: <br> kod w secji head: <br> <b>.nad {color:pink; font-size: 15pt;}</b> <br> kod w sekcji body: <br> <b>&lt;p class="nad"&gt;okej&lt;/p&gt;</b></p>
-            <p>c) Selektor indentyfikatora - selektor ten jest stosowany, gdy chcemy nadać określone atrybuty formatowania elementowi, <br> który ma przypisany jednoznaczny indentyfikator, czyli występuje raz - w odróżnieniu od klasy. Selektor indentyfikatora ma postać: <br><b>selektor# indentyfikator {właściwość: wartość;}</b> <br> lub <br> <b>#indentyfikator {właściwość: wartość;}</b></p>
-            <p> Deklaracja indentyfikatora musi się rozpoczynać znakiem <b>#</b>.</p>
-            <p>Przykład: <br> kod w secji head: <br> <b>h3#nag11 {color: yellow;}</b> <br> kod w sekcji body: <br> <b>&lt;h3 id="nag11"&gt;okej&lt;/h3&gt;</b></p>
-            <p>4. Pseudoklasy - dynamiczna zmiana stylu. Element otrzymuje lub traci pseudoklasę podczas interakcji z użytkownikiem. <br> Przykładem są linki(odsyłacze), które zmieniają wygląd po najechaniu na nie kursorem myszy, ich kliknięciu lub otwarciu linku.</p>
-            <p>Odsyłacze (linki) mają właściwości, które określają działanie użytkownika. Są to:</p>
-            <table>
-                <tr><th>:link</th><th> link nieaktywny, które nie został przez uzytkownika odwiedzony</th></tr>
-                <tr><th>:visited</th><th> link odwiedzony, strona była odwiedzana</th></tr>
-                <tr><th>:hover</th><th> link gotowy do kliknięcia, kursor myszy ustawiony pod linkiem</th></tr>
-                <tr><th>active</th><th> link odwiedzany, strona obecnie wczytywana</th></tr>
-            </table>
-            <p>a) Odsyłacz podstawowy (pseudoklasa :link) - nadaje atrybuty formatowania odsyłaczowi, który był otwierany, a informacja o tym zostałą umieszczona w pamięci przeglądarki: <br> <b>a:visited  {właściwość: wartość;}</b></p>
-            <p> Z deklaracją klasy: <br> <b>a.nazwa_klasy:visited  {właściwość: wartość;}</b></p>
-            <p>Przykłady:<br> <b>a:visited {color:pink;}</b><br> Z klasą: <br><b>a.nad:visited {color: pink;}</b></p>
-            <p>b) Wskazanie kursorem myszy (pseudoklasa :hover) - nadaje atrybuty formatowania odsyłaczowi, gdy myszka znajduje się na nim, ale nie aktywuje go: <br> <b>a:hover {właściwość: wartość;}</b></p>
-            <p> Z deklaracją klasy: <br> <b>a.nazwa_klasy:hover  {właściwość: wartość;}</b></p>
-            <p>Przykłady:<br> <b>a:hover {color:pink;}</b><br> Z klasą: <br><b>a.nad:hover {color: pink;}</b></p>
-            <center><h4>UWAGA - Presudoklasa :hover może być używana do definiowania stylów elementów innych niż odsyłacze.</h4></center>
-            <p>c) Odsyłacz aktywny (pseudoklasa :active) - nadaje atrybuty formatowania odsyłaczowi, któy w danej chwili jest aktywny: <br> <b>a:active {właściwość: wartość;}</b></p>
-            <p> Z deklaracją klasy: <br> <b>a.nazwa_klasy:active  {właściwość: wartość;}</b></p>
-            <p>Przykłady:<br> <b>a:active {color:pink;}</b><br> Z klasą: <br><b>a.nad:active {color: pink;}</b></p>
-            <p> Kolejność deklarowania w arkuszu stylów pseudoklas do odsyłączy jest ważna, aby porawnie to działało. <br> Poprawna kolejność:</p>
-            <ol TYPE="1">
-                <li>a:link {właściwość: wartość;} </li>
-                <li>a:visited {właściwość: wartość;} </li>
-                <li>a:hover {właściwość: wartość;} </li>
-                <li>a:active {właściwość: wartość;} </li>
-                </ol>
-            <p>d) Presudoklasa :focus - nadaje atrybuty formatowania odsyłaczowi(wcześniej wybranemu za pośrednictwem klawisza Tab) lub polu formularza, na którym został ustawiony kursor: <br> <b>selektor :focus {właściwość: wartość;}</b></p>
-            <p>5. Selektory pseudoelementów - pomagają w formatowaniu specjalnych elementów, np. pierwsza litera lub pierwsza linia akapitu bez otaczania ich znacznikami. <br> Pseudoelementy są dostępne w języku CSS.</p>
-            <p>a) pierwsza lina (:first-line) - nadaje określone formatowanie wszystkim pierwszym liniom znacznika, do którego odnosi się selektor: <br> <b>selektor:first-line {właściwość: wartość;}</b></p>
-            <p> Selektorem moze być dowolny znacznik języka HTML.</p>
-            <p> Przykład: <br> <b>p:first-line {color:pink; font-size: 15pt;}</b></p>
-            <p>b) pierwsza litera (:first-letter) - nadaje odrębne formatowanie pierwszej literze,np. akapitu. <br> Służy do poprawiania wyglądu tekstu poprzez zaprojektowanie ozdobionego inicjału: <br> <b>selektor:first-letter {właściwość: wartość;}</b></p>
-            <p> Przykład: <br> <b>p:first-letter {color:pink; font-size: 15pt; font-family: arial;}</b></p>
-            <p> Grupowanie selektorów przez wspólną deklarację, czyli zamaist pisać: <br> <b>p {color: pink;} <br> h2 {color: pink;} <br>li {color: pink;} <br></b></p>
-            <p> Może zastąpić to wspólną definicją stylu: <br> <b>p, h2, li {color: pink;}</b></p>
-    </body>
-</html> 
+<head>
+<meta charset="UTF-8" />
+<title>Daria Zalewa</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Selektory</p>
+    <nav>
+    <ul>
+    <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
+        <p> Selektorem może być dowolny element języka HTML, dla którego chcemy zdefiniować parametry formatowania. <br> Rodzaje selektorów: <br></p>
+        <ol TYPE="1">
+          <li>Selektory elementów </li>
+          <li>Selektory atrybutów </li>
+          <li>Selektory specjalne </li>
+          <li>Selektory pseudoklas </li>
+          <li>Selektory pseudoelementów </li>
+        </ol>
+    </section>
+    <section class="kolumny" id="kol2">
+        <p> 1. Selektory elementów - selektory elementów wybierają elementy na podstawie ich nazwy. <br>Składnia dla selektorów elementów to podana już podstawowa składnia języka CSS: <br> <b>selektor {właściwość: wartość;}</b></p>
+        <p>a) Selektor typu elementu - podstawowy typ selektora. Służy do definiowania formatowania znaczników występujących na stronie,np. p, h3, table, img: <br> <b>p {color: blue; font-size: 4pt;}</b></p>
+        <p>b) Selektor uniwersalny - inaczej ogólny, to selektor pasujący do wszystkich znaczników. Jest oznaczany gwiazdką *.<br> Składnia tego selektora: <br> <b>* {właściwość:wartość;}</b> <br> <br> Zamiast grupować elementy,np.: <br> <b>p, h1, h3, table {font-family:courier new; color:red;}</b> <br> można użyć tego selektora i tej gwiazdki: <br> <b>* {font-family:courier new; color:red;}</b></p>
+        <p>c) Selektor potomka - przy użyciu tego slektora można formatować elementy, które są zawarte wewnątrz innych znaczników: <br> <b> selektor selektor{ właściwość: wartość;}</b> <br> <br> Jeśli wewnątrz znacznika <b>&lt;div&gt;</b> zostanie umieszczony znacznik <b>&lt;span&gt;</b> to definicja będzie wyglądać następująco: <br> <b>div span {font-size:12pt; color:pink;}</b> </p>
+        <p>d) Selektor dziecka - służy do definiowania formatowania elementów, które znajdują się o jeden rząd niżej w hierarchi drzewa dokumentu. <br> Składnia tego selektora: <br> <b>rodzic &gt; dziecko {właściwość:wartość;}</b> <br> <br> Symbol &gt; oznacza bezpośredni związek między elementami. Wygląd przykładowej selekcji dziecka: <br> <b>div&gt;span {font-size:12pt; color:pink;}</b></p>
+        <p>e)Selektor sąsiadującego brata - umożliwia on nadanie drugiemu z sąsiadujących elementów zdefiniowanych atrybutów formatowania. Postać selektora: <br> <b> brat1 + brat2 {właściowość: wartość;}</b> <br><br> Przykładowe użycie selektora sąsiadujących braci: <br><b>div + span {font-size:12pt; color:pink;}</b> </p>
+        <p>f) Selektor braci - umożliwia nadanie drugiemu i wszystkim następnym sąsiadującym elementom zdefiniowanych atrybutów formatowania. Postać selektora: <br> <b>brat1 ~ brat2 {właściowość: wartość;} </b><br><br> Przykładowe użycie selektora braci:<br> <b>div ~ span {font-size:12pt; color:pink;}</b></p>
+        <p>2. Selektory atrybutów - w języku CSS można formatować znaczniki na podstawie atrybutów, <br> które one mają (czyli w skrócie możemy sformatować znaczniki na danych atrybutów). <br> Postać selektora atrybutów: <br> <b>selektor[atrybut="wartość atrybutu"] {właściwość: wartość}</b><br>Przykład:<br><b> p[id="rozowy"] {font-size:12pt; color:pink;}</b></p>
+        <p>a) Prosty selektor atrybutu - jest on wykorzystywany dla elementów, którym został określony atrybut, ale jego wartość nie ma znaczenia: <br> <b>selektor[atrybut] {właściwość: wartość;}</b> <br> lub <br> <b>[atrybut] {właściwość: wartość;}</b> <br> <br> Przykładowe użycie: <br> <b>p[id] {font-size:12pt; color:pink;}</b></p>
+        <p>b) Selektor atrybutu o określonej wartości - ten rodzaj selektora określa formatowanie, gdy atrybut ma określoną wartość: <br> <b>selektor[atrybut="wartość"] {właściwość: wartość;}</b> <br> lub <br> <b>[atrybut="wartość"] {właściwość: wartość;}</b> <br><br> Przykład: <br> w sekcji head: <br> <b>p[id="center"] {font-size:12pt; color:pink;}</b> <br> w sekcji body: <br> <b>&lt;p id="center"&gt;ok&lt;/p&gt; </b></p>
+        <p>c) Selektor atrybutu zawierający określony wyraz - ten atrybut może zostać wykorzystany, gdy wartość atrybutu składa się z kilku wyrazów. <br> Wystarczy, że w wartości atrybutu wystąpi podany wyraz, aby dany element został odpowiednio sformatowany. <br> Postać selektora: <br> <b>selektor[atrybut~="wyraz"] {właściwość: wartość;}</b> <br> lub <br> <b>[atrybut~="wyraz"] {właściwość: wartość;}</b> <br><br> Przykład: <br> w sekcji head: <br> <b>p[title~="jest"] {font-size:12pt; color:pink;}</b> <br> w sekcji body: <br> <b>&lt;p title="mój styl"&gt;okej&lt;/p&gt;</b></p>
+        <p>3. Selektory specjalne</p>
+        <p>a) Selektor klasy - pozwala on na nadanie określonych atrybutów takim samym elementom występującym na stronie. <br> Dlatego jeśli chcemy, to dzięki selektorowi klas możemy dla każdej grupy utworzyć klasę o dowolnej nazwie i zdefiniować dla niej styl. <br> Postać selektora klasy: <br> <b>selektor.nazwa_klasy {właściwość: wartość;}</b><br><br> Nazwa klasy to pojedynczy wyraz, który musi spełniać kilka warunków:</p>
+        <table>
+            <tr><th>1</th><th> Musi zaczynać się od kropki.</th></tr>
+            <tr><th>2</th><th> Mogą być użyte litery, cyfry, znak podkreślenia, łącznik.</th></tr>
+            <tr><th>3</th><th> Po kropce musi zostać wpisana litera.</th></tr>
+            <tr><th>4</th><th> Rozróżniane są małe i wielkie litery.</th></tr>
+            <tr><th>5</th><th> Stosowanie polskich znaków nie jest zalecane.</th></tr>
+            <tr><th>6</th><th> Nie może zawierać spacji.</th></tr>
+        </table>
+        <p>Przykład selektra klasy: <br> <b>p.tekst1 {font-size:12pt; color:pink;} <br>p.tekst2 {font-size:14pt; color:red;} <br> p.tekst3 {font-size:16pt; color:orange; font-family: courier;} </b></p>
+        <p>Odwołanie do klasy w dokumencie HTML ma postać: <br> <b>&lt;znacznik class="nazwa_klasy"&gt;...&lt;/znacznik&gt;</b><br><br> Tutaj nazwa klasy jest wartością atrybutu class. W nazwie klasy podawanej jako wartość atrybutu nie wstawia się kropki.</p>
+        <p>b) Uniwersalny selektor klasy - ta zdefiniowana klasa moż ezotsać użyta do sformatowania dowolnego elementu bez względu na typ znacznika: <br> <b>.nazwa_klasy {właściwość: wartość;}</b></p>
+        <p>Przykład: <br> kod w secji head: <br> <b>.nad {color:pink; font-size: 15pt;}</b> <br> kod w sekcji body: <br> <b>&lt;p class="nad"&gt;okej&lt;/p&gt;</b></p>
+        <p>c) Selektor indentyfikatora - selektor ten jest stosowany, gdy chcemy nadać określone atrybuty formatowania elementowi, <br> który ma przypisany jednoznaczny indentyfikator, czyli występuje raz - w odróżnieniu od klasy. Selektor indentyfikatora ma postać: <br><b>selektor# indentyfikator {właściwość: wartość;}</b> <br> lub <br> <b>#indentyfikator {właściwość: wartość;}</b></p>
+        <p> Deklaracja indentyfikatora musi się rozpoczynać znakiem <b>#</b>.</p>
+        <p>Przykład: <br> kod w secji head: <br> <b>h3#nag11 {color: yellow;}</b> <br> kod w sekcji body: <br> <b>&lt;h3 id="nag11"&gt;okej&lt;/h3&gt;</b></p>
+        <p>4. Pseudoklasy - dynamiczna zmiana stylu. Element otrzymuje lub traci pseudoklasę podczas interakcji z użytkownikiem. <br> Przykładem są linki(odsyłacze), które zmieniają wygląd po najechaniu na nie kursorem myszy, ich kliknięciu lub otwarciu linku.</p>
+        <p>Odsyłacze (linki) mają właściwości, które określają działanie użytkownika. Są to:</p>
+        <table>
+            <tr><th>:link</th><th> link nieaktywny, które nie został przez uzytkownika odwiedzony</th></tr>
+            <tr><th>:visited</th><th> link odwiedzony, strona była odwiedzana</th></tr>
+            <tr><th>:hover</th><th> link gotowy do kliknięcia, kursor myszy ustawiony pod linkiem</th></tr>
+            <tr><th>active</th><th> link odwiedzany, strona obecnie wczytywana</th></tr>
+        </table>
+        <p>a) Odsyłacz podstawowy (pseudoklasa :link) - nadaje atrybuty formatowania odsyłaczowi, który był otwierany, a informacja o tym zostałą umieszczona w pamięci przeglądarki: <br> <b>a:visited  {właściwość: wartość;}</b></p>
+        <p> Z deklaracją klasy: <br> <b>a.nazwa_klasy:visited  {właściwość: wartość;}</b></p>
+        <p>Przykłady:<br> <b>a:visited {color:pink;}</b><br> Z klasą: <br><b>a.nad:visited {color: pink;}</b></p>
+        <p>b) Wskazanie kursorem myszy (pseudoklasa :hover) - nadaje atrybuty formatowania odsyłaczowi, gdy myszka znajduje się na nim, ale nie aktywuje go: <br> <b>a:hover {właściwość: wartość;}</b></p>
+        <p> Z deklaracją klasy: <br> <b>a.nazwa_klasy:hover  {właściwość: wartość;}</b></p>
+        <p>Przykłady:<br> <b>a:hover {color:pink;}</b><br> Z klasą: <br><b>a.nad:hover {color: pink;}</b></p>
+        <center><h4>UWAGA - Presudoklasa :hover może być używana do definiowania stylów elementów innych niż odsyłacze.</h4></center>
+        <p>c) Odsyłacz aktywny (pseudoklasa :active) - nadaje atrybuty formatowania odsyłaczowi, któy w danej chwili jest aktywny: <br> <b>a:active {właściwość: wartość;}</b></p>
+        <p> Z deklaracją klasy: <br> <b>a.nazwa_klasy:active  {właściwość: wartość;}</b></p>
+        <p>Przykłady:<br> <b>a:active {color:pink;}</b><br> Z klasą: <br><b>a.nad:active {color: pink;}</b></p>
+        <p> Kolejność deklarowania w arkuszu stylów pseudoklas do odsyłaczy jest ważna, aby poprawnie to działało. <br> Poprawna kolejność:</p>
+        <p> 1. a:link {właściwość: wartość;}</p>
+        <p> 2. a:visited {właściwość: wartość;}</p>
+        <p> 3. a:hover {właściwość: wartość;}</p>
+        <p> 4. a:active {właściwość: wartość;}</p>
+        <p>d) Presudoklasa :focus - nadaje atrybuty formatowania odsyłaczowi(wcześniej wybranemu za pośrednictwem klawisza Tab) lub polu formularza, na którym został ustawiony kursor: <br> <b>selektor :focus {właściwość: wartość;}</b></p>
+        <p>5. Selektory pseudoelementów - pomagają w formatowaniu specjalnych elementów, np. pierwsza litera lub pierwsza linia akapitu bez otaczania ich znacznikami. <br> Pseudoelementy są dostępne w języku CSS.</p>
+        <p>a) pierwsza lina (:first-line) - nadaje określone formatowanie wszystkim pierwszym liniom znacznika, do którego odnosi się selektor: <br> <b>selektor:first-line {właściwość: wartość;}</b></p>
+        <p> Selektorem moze być dowolny znacznik języka HTML.</p>
+        <p> Przykład: <br> <b>p:first-line {color:pink; font-size: 15pt;}</b></p>
+        <p>b) pierwsza litera (:first-letter) - nadaje odrębne formatowanie pierwszej literze,np. akapitu. <br> Służy do poprawiania wyglądu tekstu poprzez zaprojektowanie ozdobionego inicjału: <br> <b>selektor:first-letter {właściwość: wartość;}</b></p>
+        <p> Przykład: <br> <b>p:first-letter {color:pink; font-size: 15pt; font-family: arial;}</b></p>
+        <p> Grupowanie selektorów przez wspólną deklarację, czyli zamaist pisać: <br> <b>p {color: pink;} <br> h2 {color: pink;} <br>li {color: pink;} <br></b></p>
+        <p> Może zastąpić to wspólną definicją stylu: <br> <b>p, h2, li {color: pink;}</b></p>
+    </section>
+    <section class="kolumny" id="kol3">
+    <p> W języku HTML często występuje zagnieżdżanie jednego elementu wewnątrz drugiego. <br> Jeżeli dla elementu nadrzędnego w arkuszach stylów zostały zdefiniowane właściwości, <br>to w większości przypadków elementowi podrzędnemu zostaną pzrypisane te same właściwości. <br> Taki mechanizm nazywamy dziedziczeniem.</p>
+    </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
+</html>
