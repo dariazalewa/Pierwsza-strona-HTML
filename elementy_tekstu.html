@@ -1,20 +1,24 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>D.Z.</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
-    <body>
-        <center><h2> HTML i CSS - Właściwości elementów stylów -> Tekst</h2></center>
-        <br>
-        <nav><B>Rozdziały: </B>
-            <li><a href="glowna.html"> Powrót do strony głównej </a></li>
-        </nav>
-        <br>
-        <p> Język CSS pozwala na formatowanie tekstu poprzez dodanie do niego stylu. <br> Umożliwia to nie tylko szybką zmianę wyglądu tekstu na stronie, ale także swobodne manipulowanie tekstem i grafiką umieszczoną w tekście.</p>
-        <p> <u>Wcięcie tekstu</u> pozwala modyfikować wcięcie pierwszego wiersza akapitu. Można użyć wtedy atrybutu text-indent: <br> <b> selektor {text-indent: wartość;}</b></p>
-        <p> Przykład : <br> <br> <b> p {text-indent: 20px;} </b><br> <br></p>
+<head>
+<meta charset="UTF-8" />
+<title>Daria Zalewa</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Właściwości elementów stylów -> Tekst</p>
+    <nav>
+    <ul>
+    <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
+    <p> Język CSS pozwala na formatowanie tekstu poprzez dodanie do niego stylu. <br> Umożliwia to nie tylko szybką zmianę wyglądu tekstu na stronie, ale także swobodne manipulowanie tekstem i grafiką umieszczoną w tekście.</p>
+    </section>
+    <section class="kolumny" id="kol2">
         <p> <u>Wyrównanie tekstu</u> definiuje atrybut text-align i odpowiada on atrybutowi align w języku HTML: <br> <b> selektor {text-align: wartość;}</b></p>
         <p> Wartości, które pomagają określić wyrównanie:</p>
         <table>
@@ -71,5 +75,12 @@
             <tr><th>pre-wrap</th><th> umożliwia wyświetlanie kilku spacji obok siebie. <br> Wiersze tekstu są przełamywane w miejscu wystąpienia znaku nowej linii (Enter) oraz automatycznie na końcu szerokości strony.</th></tr>
             <tr><th>pre-line</th><th> umożliwia wyświetlanie kilka sasiednich spacji na jedną. <br> Wiersze tekstu są przełamywane w miejscu wystąpienia znaku nowej linii (Enter)oraz automatycznie na końcu szerokości strony.</th></tr>
         </table>
-    </body>
+    </section>
+    <section class="kolumny" id="kol3">
+    <p> <u>Wcięcie tekstu</u> pozwala modyfikować wcięcie pierwszego wiersza akapitu. Można użyć wtedy atrybutu text-indent: <br> <b> selektor {text-indent: wartość;}</b></p>
+    <p> Przykład : <br> <br> <b> p {text-indent: 20px;} </b><br> <br></p>
+    </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
 </html>
