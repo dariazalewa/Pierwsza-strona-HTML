@@ -13,12 +13,12 @@ li a {display: block; color:white; text-align: center; padding: 14px 16px; text-
 li a:hover {background-color: turquoise;}
 table, td, th {border: 1px solid rgb(164, 164, 165); border-collapse: collapse;}
 th, td{padding: 5px; text-align: left;}
-h4 {color:red;}
+h4 {color:rgb(194, 11, 11);}
 h3 {color:rgb(19, 70, 78);}
 u {color:rgb(32, 37, 37);}
 b { color:rgb(8, 85, 62);}
 p#ak1 { font-size: 14pt; color:deeppink;}
-p#ak2 {font-size: 16pt; color:darkturquoise;}
+p#ak2 {font-size: 16pt; color:rgb(160, 0, 209);}
 p.t1 {font-size: 14pt; color:hotpink;}
 p.t2 {font-size: 16pt; color:fuchsia;}
 figure {display: block; margin-block-start: none; margin-block-end: none; margin-inline-start: none; margin-inline-end: none;}
