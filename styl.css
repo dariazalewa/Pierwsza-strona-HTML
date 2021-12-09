@@ -6,10 +6,19 @@ section {overflow: hidden; padding: 25px;}
 .kolumny {margin-top: 10px; margin-right: 2%; margin-bottom: 2%; margin-left: 10px; background-color: rgb(148, 187, 187);}
 #kol1 {float: left; width: 180px;}
 #kol2 {float: left; width: 490px;}
-#kol3 {width: 100px;}
+#kol3 {width: 108px;}
 ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: rgb(100, 111, 114);}
 li {float: left;}
 li a {display: block; color:white; text-align: center; padding: 14px 16px; text-decoration: none;}
 li a:hover {background-color: turquoise;}
 table, td, th {border: 1px solid rgb(164, 164, 165); border-collapse: collapse;}
 th, td{padding: 5px; text-align: left;}
+h4 {color:red;}
+h3 {color:rgb(0, 153, 255);}
+u {color:chocolate;}
+b { color:rgb(8, 57, 85);}
+p#ak1 { font-size: 14pt; color:deeppink;}
+p#ak2 {font-size: 16pt; color:darkturquoise;}
+p.t1 {font-size: 14pt; color:hotpink;}
+p.t2 {font-size: 16pt; color:fuchsia;}
+figure {display: block; margin-block-start: none; margin-block-end: none; margin-inline-start: none; margin-inline-end: none;}
