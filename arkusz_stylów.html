@@ -1,54 +1,65 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>D.Z.</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
-    <body>
-        <center><h2> HTML i CSS - Arkusz stylów, czyli wprowadzenie do języka CSS</h2></center>
+<head>
+<meta charset="UTF-8" />
+<title>Daria Zalewa</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Arkusz stylów, czyli wprowadzenie do języka CSS</p>
+    <nav>
+    <ul>
+    <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
+        <p>Język CSS umożliwia tworzenie układu graficznego dokumentu HTML, np. wielkość czcionki, rodzaj czcionki, wysokość/szerokość obrazków, itp. <br>
+            Wszystkie polecenia dotyczącze formatowania powinny zostać umieszczone w oddzielnym pliku i powiązane z elementami kodu HTML(zewnętrzny arkusz stylów). <br>
+          Składnia kaskadowych arkuszy stylów: <br> <br>
+        Selektor {  <br>
+          właściwości:wartość; <br>
+        } <br> <br> Przykład: <br> <br>
+      body { <br>
+      background color: blue; <br>
+      font-size: 12 px; <br>
+      } <br> <br> </p>
+    </section>
+    <section class="kolumny" id="kol2">
+        <p>W dokumencie HTML istnieje kilka sposobów dołączenia stylów CSS: <br>
+        a) styl lokalny(w linii), <br>
+        b) wewnętrzny arkusz stylów, <br>
+        c) zewnętrzny arkusz stylów, <br>
         <br>
-        <nav><B>Rozdziały: </B>
-            <li><a href="glowna.html"> Powrót do strony głównej </a></li>
-          </nav>
-          <br>
-          <p>Język CSS umożliwia tworzenie układu graficznego dokumentu HTML, np. wielkość czcionki, rodzaj czcionki, wysokość/szerokość obrazków, itp. <br>
-          Wszystkie polecenia dotyczącze formatowania powinny zostać umieszczone w oddzielnym pliku i powiązane z elementami kodu HTML(zewnętrzny arkusz stylów). <br>
-        Składnia kaskadowych arkuszy stylów: <br> <br>
-      Selektor {  <br>
-        właściwości:wartość; <br>
-      } <br> <br> Przykład: <br> <br>
-    body { <br>
-    background color: blue; <br>
-    font-size: 12 px; <br>
-    } <br> <br>
-    W dokumencie HTML istnieje kilka sposobów dołączenia stylów CSS: <br>
-    a) styl lokalny(w linii), <br>
-    b) wewnętrzny arkusz stylów, <br>
-    c) zewnętrzny arkusz stylów, <br>
-    <br>
-    a) W stylu lokalnym jest utworzony styl w jednej linii z elementem formatowania, np. <br>
-    <b>&lt; body style="background-color: red;"&gt;<br>
-    &lt;p style="color: darkolivegreen;"&gt;<br></b>
-    Znacznik <b>&lt;span&gt;</b> służy do grupowania/wyróżniania kilku elementów, np. obrazów, słów, akapitów w celu nadania im określonego stylu. <br> <br>
-    <b>&lt;span style="właściwości:wartość;"&gt;...&lt;/span&gt;</b>. <br> <br> Przykładowe użycie znacznika <b>&lt;span&gt;</b>: <br> <br>
-    <b>&lt;h3&gt; Mam obecnie &lt;span style="color:brown;"&gt;praktyki&lt;/span&gt; zawodowe.&lt;/h3&gt; </b> <br> <br> Rezultat: <br>
-  </p>
-  <h3> Mam obecnie <span style="color:brown;">praktyki</span> zawodowe.</h3> 
-  <p>Znaczniki wydzielonych bloków <br> Używając znaczników blokowych możemy zgrupować poszczególne elementy w bloki i je sformatować, np. akapity, listy. <br>
-  <b>&lt;div style="właściwość: wartość;"&gt;...&lt;/div&gt;</b></p>
-  <p>c) Polega na utworzeniu pliku z rozszerzeniem <b>.css</b>, który będzie zawierał definicję wszystkich stylów używanych w projektowanej witrynie. <br> W dokumencie HTML powinnien znaleźć się do tego pliku odnośnik. Wpisujemy go w części nagłówkowej:<br>
-    <b>&lt;link rel="stylesheet" type="text/css" href="arkusz.css" &gt; </b> <br> Właściwości czcionki: <br>
-  </p>
-  <table>
-    <tr><th>font-family</th><th>krój czcionki</th></tr>
-    <tr><th>font-size</th><th>rozmiar czcionki</th></tr>
-    <tr><th>font-weight</th><th>deklaracja grubości czcionki</th></tr>
-    <tr><th>color</th><th>kolor czcionki</th></tr><tr>
-    <th>line-height</th><th>deklaracja odstępu między liniami</th></tr>
-    <th>text-decoration : underline, line-through, word- spacing</th><th>deklaracja wyróżnienia</th></tr>
-</table>
-<p>Klasa jest atrybutem znaczników dokumentu HTML i odnosi się do selektora klasy lub klasy uniweralnej. <br> Ogólna postać klasy: <br>
-<b>&lt; znacznik class="nazwa klasy"&gt;...&lt;/znacznik&gt;</b> <br> np. <br> w pliku HTML: <b>&lt;p class="nr1"&gt;ok&lt;/p&gt; </b> <br> w pliku CSS: <b>>p.nr1{ <br> color:blue; <br> font-size: 15pt;}</b></p>
-    </body>
-    </html>      
+        a) W stylu lokalnym jest utworzony styl w jednej linii z elementem formatowania, np. <br>
+        <b>&lt; body style="background-color: red;"&gt;<br>
+        &lt;p style="color: darkolivegreen;"&gt;<br></b>
+        Znacznik <b>&lt;span&gt;</b> służy do grupowania/wyróżniania kilku elementów, np. obrazów, słów, akapitów w celu nadania im określonego stylu. <br> <br>
+        <b>&lt;span style="właściwości:wartość;"&gt;...&lt;/span&gt;</b>. <br> <br> Przykładowe użycie znacznika <b>&lt;span&gt;</b>: <br> <br>
+        <b>&lt;h2&gt; Już niedługo &lt;span style="color:brown;"&gt;święta&lt;/span&gt; będą.&lt;/h2&gt; </b> <br> <br> Rezultat: <br>
+      </p>
+      <h2> Już niedługo <span style="color:brown;">święta</span> będą.</h2> 
+      <p>Znaczniki wydzielonych bloków <br> Używając znaczników blokowych możemy zgrupować poszczególne elementy w bloki i je sformatować, np. akapity, listy. <br>
+      <b>&lt;div style="właściwość: wartość;"&gt;...&lt;/div&gt;</b></p>
+      <p>c) Polega na utworzeniu pliku z rozszerzeniem <b>.css</b>, który będzie zawierał definicję wszystkich stylów używanych w projektowanej witrynie. <br> W dokumencie HTML powinnien znaleźć się do tego pliku odnośnik. Wpisujemy go w części nagłówkowej:<br>
+      <b>&lt;link rel="stylesheet" type="text/css" href="arkusz.css" &gt; </b> <br> Właściwości czcionki: <br>
+      </p>
+      <table>
+        <tr><th>font-family</th><th>krój czcionki</th></tr>
+        <tr><th>font-size</th><th>rozmiar czcionki</th></tr>
+        <tr><th>font-weight</th><th>deklaracja grubości czcionki</th></tr>
+        <tr><th>color</th><th>kolor czcionki</th></tr><tr>
+        <th>line-height</th><th>deklaracja odstępu między liniami</th></tr>
+        <th>text-decoration : underline, line-through, word- spacing</th><th>deklaracja wyróżnienia</th></tr>
+    </table>
+    </section>
+    <section class="kolumny" id="kol3">
+    <p>Klasa jest atrybutem znaczników dokumentu HTML i odnosi się do selektora klasy lub klasy uniweralnej. <br> Ogólna postać klasy: <br>
+    <b>&lt; znacznik class="nazwa klasy"&gt;...&lt;/znacznik&gt;</b> <br> np. <br> w pliku HTML:<b>&lt;p class="nr1"&gt;ok&lt;/p&gt; </b> <br> w pliku CSS: <b>p.nr1{ <br> color:blue; <br> font-size: 15pt;}</b></p>
+    </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
+</html>   
