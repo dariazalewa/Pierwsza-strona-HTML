@@ -1,21 +1,27 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>D.Z.</title>
-      <link rel="stylesheet" type="text/css" href="css.css">
-    </head>
-    <body>
-        <center><h2> HTML i CSS - Właściwości elementów stylów -> Tło i kolor</h2></center>
-        <br>
-        <nav><B>Rozdziały: </B>
-        <li><a href="glowna.html"> Powrót do strony głównej </a></li>
-        </nav>
-        <br>
+<head>
+<meta charset="UTF-8" />
+<title>Daria Zalewa</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Właściwości elementów stylów -> Tło i kolor</p>
+    <nav>
+    <ul>
+    <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
         <p> W języku CSS kolor tekstu oraz właściwości tła można definiować dla różnych elementów z użyciem stylów.</p>
         <p> <u>Kolor</u> - korzystając z atrybutu color, można opisać pierwszoplanowy kolor wybranego elementu: <br> <b> selektor {color: wartość;}</b></p>
         <p> Przykład : <br> <br> <b> h3 {color: rebeccapurple;} </b><br> <br> Rezultat: <br></p>
         <h3 style="color: rebeccapurple;">ok</h3>
+    </section>
+    <section class="kolumny" id="kol2">
         <p> <u>Kolor tła</u> - definiowany za pomocą atrybutu background-color: <br> <b> selektor {background-color: wartość;}</b></p>
         <p> Przykłady : <br> <br> <b> h3 {background-color: red;} </b><br> <b> &lt;p style="background-color: lightskyblue;"&gt;ok&lt;/p&gt;</b><br> <b> body {background-color: green;} </b><br><br> Rezultat: <br></p>
         <p style="background-color: lightskyblue;">ok</p>
@@ -62,7 +68,9 @@
         <p> <u>Usunięcie tła</u> - jeżeli na stronie (lub na kilku stronach) nie chcemy stosować wcześniej zdefiniowanego tła dla danych stron lub elementów, <br> to najprostszym rozwiązaniem jest niedołączanie do tych stron zewnętrznego arkusza stylów. <br> Nie jest to zawsze jednak dobre rozwiązanie, lepszym jest zachowanie odnośnika do zewnętrznego arkusza stylów, <br> a dodatkowo w wewnątrznym arkuszu stylów lub w stylu inline usunięcie tła dla danej strony: <br> <b> selektor {background: none;}</b></p>
         <p> Polecenie usuwa wszystkie atrybuty dotyczące tła.</p>
         <p> Podobną metodą można usunąć tylko wybrane atrybuty tła. Należy wtedy w poleceniu użyć nazwy atrybutu, który zostanie usunięty.</p>
-        <p> <u>Atrybuty tła</u> - możliwe jest też zdefiniowanie wszystkich właściwości tła przy użyciu jednego atrybutu background: <br> <b> selektor {background: wartości_atrybutów;}</b></p>
+    </section>
+    <section class="kolumny" id="kol3">
+        <p> <u>Atrybuty tła</u> Możliwe jest też zdefiniowanie wszystkich właściwości tła przy użyciu jednego atrybutu background: <br> <b> selektor {background: wartości;}</b></p>
         <p> Jako wartości atrybutów podajemy konkretne wartości oddzielone spacjami. Nie trzeba podawać pełnej listy atrybutów. <br> Opuszczonemu atrybutowi zostanie przypisana wartość domyślna: </p>
         <table>
             <tr><th>1.</th><th> kolor</th></tr>
@@ -71,5 +79,8 @@
             <tr><th>4.</th><th>blokada tła</th></tr>
             <tr><th>5.</th><th> pozycja</th></tr>
         </table>
-    </body>
+    </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
 </html>
