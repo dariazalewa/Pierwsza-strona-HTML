@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Daria Zalewa</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <div id="ramka">
+    <header id="naglowek"><h1> HTML i CSS - powtórzenie </h1>
+    <p> Ciekawe i pożyteczne komendy do HTML i CSS</p>
+    <nav>
+    <ul>
+    <li><a href="glowna.html"> Główna</a></li>
+    </ul>
+    </nav>
+    </header>
+    <section class="kolumny" id="kol1">
+    <p>1. Dodawanie ramki: <br> <b>&lt;iframe src="url" height="0" width="0" title="description"&gt;&lt;/iframe&gt;</b></p>
+    </section>
+    <section class="kolumny" id="kol2">
+    <p>3. Element &lt;canvas&gt; służy do rysowania grafiki za pomocą JavaScript. Element &lt;canvas&gt; jest tylko pojemnikiem na grafikę, musimy użyć JavaScript, aby faktycznie grafikę narysować. Canvas ma kilka metod rysowania ścieżek, ramek, okręgów, tekstu i dodawania obrazów.<br> Przykład podstawego, pustego elementu canvas: <br> <b>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"&gt;&lt;/canvas&gt;</b><br> Rezultat:</p>
+    <canvas id="myCan" width="200" height="100" style="border:1px solid black;"></canvas>
+    <p> Teraz dodajemy JavaScript aby coś namalować:</p>
+    <p>a) Rysowanie linii: <br> <b>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid white"&gt;&lt;/canvas&gt; <br>
+    &lt;script&gt; <br>
+        var c = document.getElementById("myCanvas"); <br>
+        var ctx = c.getContext("2d"); <br>
+        ctx.moveTo(0,0); <br>
+        ctx.lineTo(200,100); <br>
+        ctx.stroke(); <br>
+    &lt;/script&gt;</b><br> Rezultat: <br></p>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid white"></canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
+<p>b) Rysowanie koła: <br> <b>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid red"&gt;&lt;/canvas&gt; <br>
+    &lt;script&gt; <br>
+        var c = document.getElementById("myCanvas"); <br>
+        var ctx = c.getContext("2d"); <br>
+        ctx.beginPath(); <br>
+        ctx.arc(95,50,40,0,2*Math.PI); <br>
+        ctx.stroke(); <br>
+        &lt;/script&gt;</b><br> Rezultat: <br></p>
+        <canvas id="Canvas" width="200" height="100" style="border:1px solid red"></canvas>
+<script>
+var c = document.getElementById("Canvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+<p>c) Rysowanie tekstu: <br> <b>&lt;canvas id="myCanvas" width="300" height="80" style="border:1px solid gray"&gt;&lt;/canvas&gt; <br>
+    &lt;script&gt; <br>
+        var c = document.getElementById("myCanvas"); <br>
+        var ctx = c.getContext("2d"); <br>
+        ctx.font = "30px Arial"; <br>
+        ctx.fillText("Strona internetowa",10,50); <br>
+        &lt;/script&gt; </b><br> Rezultat: <br></p>
+        <canvas id="myCanv" width="300" height="80" style="border:1px solid gray"></canvas>
+<script>
+var c = document.getElementById("myCanv");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Strona internetowa",10,50);
+</script>
+<p>d) Rysowanie obramowania tekstu: <br> <b>&lt;canvas id="myCanvas" width="300" height="80" style="border:1px solid gray"&gt;&lt;/canvas&gt; <br>
+    &lt;script&gt; <br>
+        var c = document.getElementById("myCanvas"); <br>
+        var ctx = c.getContext("2d"); <br>
+        ctx.font = "30px Arial"; <br>
+        ctx.strokeText("Strona internetowa",10,50); <br>
+        &lt;/script&gt; </b><br> Rezultat: <br></p>
+        <canvas id="Canv" width="300" height="80" style="border:1px solid gray"></canvas>
+        <script>
+        var c = document.getElementById("Canv");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Strona internetowa",10,50);
+        </script>
+<p>e) Rysuje gradient liniowy: <br> <b>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid black"&gt;&lt;/canvas&gt; <br>
+    &lt;script&gt; <br>
+        var c = document.getElementById("my"); <br>
+        var ctx = c.getContext("2d"); <br>
+        // Tworzymy gradient <br>
+        var grd = ctx.createLinearGradient(0,0,200,0); <br>
+        grd.addColorStop(0,"blue"); <br>
+        grd.addColorStop(1,"white"); <br>
+        // Wypełnij gradient <br>
+        ctx.fillStyle = grd; <br>
+        ctx.fillRect(10,10,150,80); <br>
+        &lt;/script&gt;</b><br> Rezultat: <br></p>
+<canvas id="my" width="200" height="100" style="border:1px solid black"></canvas>
+<script>
+    var c = document.getElementById("my");
+    var ctx = c.getContext("2d");
+    // Create gradient
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"blue");
+    grd.addColorStop(1,"white");
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);
+    </script>
+    </section>
+    <section class="kolumny" id="kol3">
+    
+    </section>
+    <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
+    </div>
+</body>
+</html>
