@@ -20,6 +20,11 @@
     &lt;div style="width: 100px; height: 50px; background-color: blueviolet; border: 1px solid black; transform: matrix(1, -0.3, 0, 1, 0, 0);"&gt;Zmieniony&lt;/div&gt;</b><br> Rezultat:</p>
     <div style="width: 100px; height: 50px; background-color: blueviolet; border: 1px solid black;"> Normalny div</div> <br>
     <div style="width: 100px; height: 50px; background-color: blueviolet; border: 1px solid black; transform: matrix(1, -0.3, 0, 1, 0, 0);">Zmieniony</div>
+    <br>
+    <p> Przykład dla 3D: <br> <b>&lt;div style="width: 100px; height: 50px; background-color: rgb(157, 157, 209); border: 1px solid black;"&gt; Normalny div&lt;/div&gt; <br>
+    &lt;div style="width: 100px; height: 50px; background-color: rgb(157, 157, 209); border: 1px solid black; transform: rotateX(130deg);"&gt;Zmieniony&lt;/div&gt;</b><br> Rezultat:</p>
+    <div style="width: 100px; height: 50px; background-color: rgb(157, 157, 209); border: 1px solid black;"> Normalny div</div> <br>
+    <div style="width: 100px; height: 50px; background-color: rgb(157, 157, 209); border: 1px solid black; transform: rotateX(130deg);">Zmieniony</div>
     </section>
     <section class="kolumny" id="kol2">
     <p> Dzięki właściwości transformacji CSS możesz użyć następujących metod transformacji 2D:</p>
@@ -41,6 +46,14 @@
     <p> Przykład: <b>div {transform: skewY(30deg);}</b></p>
     <p>&diams; matrix() - łączy wszystkie metody transformacji 2D w jedną. Kod wygląda następująco: <b>matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())</b>,</p>
     <p> Przykład: <b>div {transform: matrix(1, -0.3, 0, 1, 0, 0);}</b></p>
+    <br>
+    <p> Metody transformacji 3D:</p>
+    <p>	&#10052; rotateX() - obraca element wokół jego osi X o zadany stopień,</p>
+    <p> Przykład: <b>#myDiv {transform: rotateX(130deg);}</b></p>
+    <p>	&#10052; rotateY() - obraca element wokół jego osi Y o zadany stopień,</p>
+    <p> Przykład: <b>#myDiv {transform: rotateY(160deg);}</b></p>
+    <p>	&#10052; rotateZ() - obraca element wokół jego osi Z o zadany stopień,</p>
+    <p> Przykład: <b>#myDiv {transform: rotateZ(90deg);}</b></p>
     </section>
     <section class="kolumny" id="kol3">
     <p> Przekształcenia CSS umożliwiają przesuwanie, obracanie, skalowanie i pochylanie elementów.</p>
