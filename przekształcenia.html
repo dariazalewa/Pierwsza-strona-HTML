@@ -16,13 +16,34 @@
     </nav>
     </header>
     <section class="kolumny" id="kol1">
-    
+    <p> Przykład dla 2D:<br> Kod:<br> <b>&lt;div style="width: 100px; height: 50px; background-color: blueviolet; border: 1px solid black;"&gt; Normalny div&lt;/div&gt; <br>
+    &lt;div style="width: 100px; height: 50px; background-color: blueviolet; border: 1px solid black; transform: matrix(1, -0.3, 0, 1, 0, 0);"&gt;Zmieniony&lt;/div&gt;</b><br> Rezultat:</p>
+    <div style="width: 100px; height: 50px; background-color: blueviolet; border: 1px solid black;"> Normalny div</div> <br>
+    <div style="width: 100px; height: 50px; background-color: blueviolet; border: 1px solid black; transform: matrix(1, -0.3, 0, 1, 0, 0);">Zmieniony</div>
     </section>
     <section class="kolumny" id="kol2">
-    
+    <p> Dzięki właściwości transformacji CSS możesz użyć następujących metod transformacji 2D:</p>
+    <p>&diams; translate() - przesuwa element zgodnie z parametrami podanymi dla osi X i Y, w przykładzie przesuwa element o 50 pikseli w prawo i 100 pikseli w dół od jego aktualnej pozycji,</p>
+    <p> Przykład: <b>div {transform: translate(50px,100px);}</b></p>
+    <p>&diams; rotate() - obraca element zgodnie z ruchem wskazówek zegara(wartości dodatnie) lub przeciwnie(wartości ujemne) zgodnie z określonym stopniem,</p>
+    <p> Przykład: <b>div {transform: rotate(10deg);}</b> <br>lub <b>div {transform: rotate(-10deg);}</b></p>
+    <p>&diams; scale() - zwiększa lub zmniejsza rozmiar elementu zgodnie z parametrami podanymi dla szerokości i wysokości, w przykładzie 4 to szerokość i 5 to wysokość,</p>
+    <p> Przykład: <b>div {transform: scale(4, 5);}</b></p>
+    <p>&diams; scaleX() - zwiększa lub zmniejsza szerokość elementu,</p>
+    <p> Przykład: <b>div {transform: scaleX(6);}</b></p>
+    <p>&diams; scaleY() - zwiększa lub zmniejsza wysokość elementu,</p>
+    <p> Przykład: <b>div {transform: scaleY(9);}</b></p>
+    <p>&diams; skew() - pochyla element wzdłuż osi X i Y o podane kąty, w przykładzie pochyla element o 40 stopni wzdłuż osi X i 30 stopni wzdłuż osi Y,</p>
+    <p> Przykład: <b>div {transform: skew(40deg, 30deg);}</b></p>
+    <p>&diams; skewX() - pochyla element wzdłuż osi X o podany kąt,</p>
+    <p> Przykład: <b>div {transform: skewX(10deg);}</b></p>
+    <p>&diams; skewY() -pochyla element wzdłuż osi Y o podany kąt,</p>
+    <p> Przykład: <b>div {transform: skewY(30deg);}</b></p>
+    <p>&diams; matrix() - łączy wszystkie metody transformacji 2D w jedną. Kod wygląda następująco: <b>matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())</b>,</p>
+    <p> Przykład: <b>div {transform: matrix(1, -0.3, 0, 1, 0, 0);}</b></p>
     </section>
     <section class="kolumny" id="kol3">
-    
+    <p> Przekształcenia CSS umożliwiają przesuwanie, obracanie, skalowanie i pochylanie elementów.</p>
     </section>
     <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
     </div>
