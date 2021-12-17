@@ -16,55 +16,24 @@
     </nav>
     </header>
     <section class="kolumny" id="kol1">
-    <p>1. Dodawanie symboli: można je dodać do paragrafu za pomocą nazwy jednostki, np.&amp;Delta;(&Delta;) lub numeru, np.&amp;#8482;(&#8482;).<br> Przykłady takich symboli:</p>
-    <table>
-        <tr><th>Symbol</th><th>Numer</th><th>Nazwa</th></tr>
-        <tr><th>&#169;</th><th>&amp;#169;</th><th>&amp;copy;</th></tr>
-        <tr><th>&#174;</th><th>&amp;#174;</th><th>&amp;reg;</th></tr>
-        <tr><th>&#8364;</th><th>&amp;#8364;</th><th>&amp;euro;</th></tr>
-        <tr><th>&#8482;</th><th>&amp;#8482;</th><th>&amp;trade;</th></tr>
-        <tr><th>&#8592;</th><th>&amp;#8592;</th><th>&amp;larr;</th></tr>
-        <tr><th>&#8593;</th><th>&amp;#8593;</th><th>&amp;uarr;</th></tr>
-        <tr><th>&#8594;</th><th>&amp;#8594;</th><th>&amp;rarr;</th></tr>
-        <tr><th>&#8595;</th><th>&amp;#8595;</th><th>&amp;darr;</th></tr>
-        <tr><th>&#9824;</th><th>&amp;#9824;</th><th>&amp;spades;</th></tr>
-        <tr><th>&#9827;</th><th>&amp;#9827;</th><th>&amp;clubs;</th></tr>
-        <tr><th>&#9829;</th><th>&amp;#9829;</th><th>&amp;hearts;</th></tr>
-        <tr><th>&#9830;</th><th>&amp;#9830;</th><th>&amp;diams;</th></tr>
-        <tr><th>&#38;</th><th>&amp;#38;</th><th>&amp;amp;</th></tr>
-    </table> 
-    <p>2. Dodawanie emoji: można je dodać do paragrafu za pomocą odniesienia dziesiętnego (dec),np. &amp;#9971;(&#9971;) lub szesnastkowego (hex),np. &amp;#x11F35D;(&#x1F35D;).<br> Przykłady takich emoji: </p>
-    <table>
-        <tr><th>Emoji</th><th>Dec</th><th>Hex</th></tr>
-        <tr><th>&#9986;</th><th>&amp;#9986;</th><th>&amp;#x2702;</th></tr>
-        <tr><th>&#9993;</th><th>&amp;#9993;</th><th>&amp;#x2709;</th></tr>
-        <tr><th>&#9986;</th><th>&amp;#9986;</th><th>&amp;#x2702;</th></tr>
-        <tr><th>&#10004;</th><th>&amp;#10004;</th><th>&amp;#x2714;</th></tr>
-        <tr><th>&#10006;</th><th>&amp;#10006;</th><th>&amp;#x2716;</th></tr>
-        <tr><th>&#10052;</th><th>&amp;#10052;</th><th>&amp;#x2744;</th></tr>
-        <tr><th>&#127183;</th><th>&amp;#127183;</th><th>&amp;#x1F0CF;</th></tr>
-        <tr><th>&#127791;</th><th>&amp;#127791;</th><th>&amp;#x1F32F;</th></tr>
-        <tr><th>&#127843;</th><th>&amp;#127843;</th><th>&amp;#x1F363;</th></tr>
-        <tr><th>&#127865;</th><th>&amp;#127865;</th><th>&amp;#x1F379;</th></tr>
-        <tr><th>&#127867;</th><th>&amp;#127867;</th><th>&amp;#x1F37B;</th></tr>
-        <tr><th>&#127918;</th><th>&amp;#127918;</th><th>&amp;#x1F3AE;</th></tr>
-        <tr><th>&#127961;</th><th>&amp;#127961;</th><th>&amp;#x1F3D9;</th></tr>
-    </table> 
-    <p> Inne przykłady emoji:</p>
-    <table>
-        <tr><th>Emoji</th><th>UFT-8</th></tr>
-        <tr><th>&#128509;</th><th>&amp;#128509;</th></tr>
-        <tr><th>&#128511;</th><th>&amp;#128511;</th></tr>
-        <tr><th>&#128512;</th><th>&amp;#128512;</th></tr>
-        <tr><th>&#128513;</th><th>&amp;#128513;</th></tr>
-        <tr><th>&#128514;</th><th>&amp;#128514;</th></tr>
-        <tr><th>&#128515;</th><th>&amp;#128515;</th></tr>
-        <tr><th>&#128516;</th><th>&amp;#128516;</th></tr>
-        <tr><th>&#128517;</th><th>&amp;#128517;</th></tr>
-    </table>
+        <p>1. Cień pod tekstem &#8594; <br>text-shadow w CSS:</p>
+        <p>a) podstawowy - <b>text-shadow: 2px 2px;</b><br> Rezultat:</p>
+        <p style="text-shadow: 2px 2px;"> strona internetowa</p>
+        <p>b) dodajemy kolor różowy - <b>text-shadow: 2px 2px pink;</b><br> Rezultat:</p>
+        <p style="text-shadow: 2px 2px pink;"> strona internetowa</p>
+        <p>c) dodajemy kolor fioletowy z efektem rozmycia - <b>text-shadow: 2px 2px 8px purple;</b><br> Rezultat:</p>
+        <p style="text-shadow: 2px 2px 8px purple;"> strona internetowa</p>
+        <p>c) dodajemy czerwony neonowy blask - <b>text-shadow: 0 0 3px red;</b><br> Rezultat:</p>
+        <p style="text-shadow: 0 0 3px red;"> strona internetowa</p>
+        <p>d) dodajemy czerwony i niebieski neonowy blask - <b>text-shadow: 0 0 3px red, 0 0 5px blue;</b><br> Rezultat:</p>
+        <p style="text-shadow: 0 0 3px red, 0 0 5px blue;"> strona internetowa</p>
+        <p>e) text-shadow na białym tekście - <b>color: white; text-shadow: 4px 4px 6px black;</b><br> Rezultat:</p>
+        <p style="color: white; text-shadow: 4px 4px 6px black;"> strona internetowa</p>
+        <p>f) text-shadow na białym tekście i jeszcze więcej efektów - <b>color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;</b><br> Rezultat:</p>
+        <p style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"> strona internetowa</p>
     </section>
     <section class="kolumny" id="kol2">
-    <p>3. Element &lt;canvas&gt; służy do rysowania grafiki za pomocą JavaScript. Element &lt;canvas&gt; jest tylko pojemnikiem na grafikę, musimy użyć JavaScript, aby faktycznie grafikę narysować. Canvas ma kilka metod rysowania ścieżek, ramek, okręgów, tekstu i dodawania obrazów.<br> Przykład podstawego, pustego elementu canvas: <br> <b>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"&gt;&lt;/canvas&gt;</b><br> Rezultat:</p>
+    <p>2. Element &lt;canvas&gt; służy do rysowania grafiki za pomocą JavaScript. Element &lt;canvas&gt; jest tylko pojemnikiem na grafikę, musimy użyć JavaScript, aby faktycznie grafikę narysować. Canvas ma kilka metod rysowania ścieżek, ramek, okręgów, tekstu i dodawania obrazów.<br> Przykład podstawego, pustego elementu canvas: <br> <b>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"&gt;&lt;/canvas&gt;</b><br> Rezultat:</p>
     <canvas id="myCan" width="200" height="100" style="border:1px solid black;"></canvas>
     <p> Teraz dodajemy JavaScript aby coś namalować:</p>
     <p>a) Rysowanie linii: <br> <b>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid white"&gt;&lt;/canvas&gt; <br>
@@ -153,25 +122,7 @@ ctx.fillText("Strona internetowa",10,50);
     </script>
     </section>
     <section class="kolumny" id="kol3">
-    <p>4. Dodawanie ramki w HTML: <br> <b>&lt;iframe src="url" height="0" width="0" title="description"&gt;&lt;/iframe&gt;</b></p>
-    <br>
-    <p>5. Aby napisać selektor na stronie, np. &lt;p&gt; i żeby znaczniki były odczytane poprawnie wpisujemy:<br> I. &lt; to kod &amp;lt; <br> II. &gt; to kod &amp;gt;</p>
-    <br>
-    <p>6. Cień pod tekstem &#8594; <br>text-shadow w CSS:</p>
-    <p>a) podstawowy - <b>text-shadow: 2px 2px;</b><br> Rezultat:</p>
-    <p style="text-shadow: 2px 2px;"> strona internetowa</p>
-    <p>b) dodajemy kolor różowy - <b>text-shadow: 2px 2px pink;</b><br> Rezultat:</p>
-    <p style="text-shadow: 2px 2px pink;"> strona internetowa</p>
-    <p>c) dodajemy kolor fioletowy z efektem rozmycia - <b>text-shadow: 2px 2px 8px purple;</b><br> Rezultat:</p>
-    <p style="text-shadow: 2px 2px 8px purple;"> strona internetowa</p>
-    <p>c) dodajemy czerwony neonowy blask - <b>text-shadow: 0 0 3px red;</b><br> Rezultat:</p>
-    <p style="text-shadow: 0 0 3px red;"> strona internetowa</p>
-    <p>d) dodajemy czerwony i niebieski neonowy blask - <b>text-shadow: 0 0 3px red, 0 0 5px blue;</b><br> Rezultat:</p>
-    <p style="text-shadow: 0 0 3px red, 0 0 5px blue;"> strona internetowa</p>
-    <p>e) text-shadow na białym tekście - <b>color: white; text-shadow: 4px 4px 6px black;</b><br> Rezultat:</p>
-    <p style="color: white; text-shadow: 4px 4px 6px black;"> strona internetowa</p>
-    <p>f) text-shadow na białym tekście i jeszcze więcej efektów - <b>color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;</b><br> Rezultat:</p>
-    <p style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"> strona internetowa</p>
+    <p>3. Dodawanie ramki w HTML: <br> <b>&lt;iframe src="url" height="0" width="0" title="description"&gt;&lt;/iframe&gt;</b></p>
     </section>
     <footer id="stopka"><p> Pracę wykonała: Daria Zalewa</p></footer>
     </div>
