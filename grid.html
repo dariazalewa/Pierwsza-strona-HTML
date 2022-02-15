@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Daria Zalewa</title>
+<style>
+body { background-color: burlywood;}
+.i1 { grid-area: header; }
+.i2 { grid-area: main; }
+.i3 { grid-area: right; }
+.i4 { grid-area: footer; }
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 8px;
+  background-color: burlywood;
+  padding: 8px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+[id^=btn]:checked + ul{
+    display: block;
+}
+</style>
+</head>
+<body>
+        <div class="grid-container">
+        <div class="i1">
+        <h1>Wikipedia</h1>
+        <input type="checkbox" id="btn">
+        <ul>
+        <li><a href="index.html">Home</a></li>      
+        <li><a href="serwis.html">Serwis</a></li>  
+        </ul>
+        </div>
+        <div class="i2">
+        <p> Artykuły w poszczególnych językach i dialektach zazwyczaj nie są tłumaczeniami, a tekstami pisanymi oryginalnie przez autorów rodzimych. <br>Nazwa Wikipedii to neologizm: pochodzi od połączenia hawajskiego wiki wiki (bardzo szybko) i encyklopedia. <br>Funkcjonuje w oparciu o oprogramowanie WIKI, które umożliwia edycję każdemu odwiedzającemu stronę i aktualizację jej treści w czasie rzeczywistym. <br>Wikipedia powstała jako projekt pomocniczy pisanej przez ekspertów Nupedii, czyli internetowej encyklopedii, w której proces redakcyjny był jeszcze wielostopniowy. <br>Jej twórcą, a  potem współzałożycielem Wikipedii był Jimmy Wales.</p>
+        </div>  
+        <div class="i3">
+        <p> Artykuły w poszczególnych językach i dialektach zazwyczaj nie są tłumaczeniami, a tekstami pisanymi oryginalnie przez autorów rodzimych. <br>Nazwa Wikipedii to neologizm: pochodzi od połączenia hawajskiego wiki wiki (bardzo szybko) i encyklopedia. <br>Funkcjonuje w oparciu o oprogramowanie WIKI, które umożliwia edycję każdemu odwiedzającemu stronę i aktualizację jej treści w czasie rzeczywistym. <br>Wikipedia powstała jako projekt pomocniczy pisanej przez ekspertów Nupedii, czyli internetowej encyklopedii, w której proces redakcyjny był jeszcze wielostopniowy. <br>Jej twórcą, a  potem współzałożycielem Wikipedii był Jimmy Wales.</p>
+        </div>
+        <div class="i4">
+        <p> Artykuły w poszczególnych językach i dialektach zazwyczaj nie są tłumaczeniami, a tekstami pisanymi oryginalnie przez autorów rodzimych. <br>Nazwa Wikipedii to neologizm: pochodzi od połączenia hawajskiego wiki wiki (bardzo szybko) i encyklopedia. <br>Funkcjonuje w oparciu o oprogramowanie WIKI, które umożliwia edycję każdemu odwiedzającemu stronę i aktualizację jej treści w czasie rzeczywistym. <br>Wikipedia powstała jako projekt pomocniczy pisanej przez ekspertów Nupedii, czyli internetowej encyklopedii, w której proces redakcyjny był jeszcze wielostopniowy. <br>Jej twórcą, a  potem współzałożycielem Wikipedii był Jimmy Wales.</p>
+        </div>
+      </div>
+</body>
+</html>
